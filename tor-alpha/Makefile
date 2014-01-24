@@ -35,6 +35,8 @@ define Package/tor-alpha/Default/description
  anonymize web browsing and publishing, instant messaging, IRC, SSH, and
  more. Tor also provides a platform on which software developers can build
  new applications with built-in anonymity, safety, and privacy features.
+
+ This version contains changes made for OpenWrt
 endef
 
 define Package/tor-alpha
