@@ -13,7 +13,7 @@ PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://prosody.im/downloads/source
-PKG_MD5SUM:=5da59bc906419ad3b4faa21516a6ca18
+PKG_MD5SUM:=bb91f73be0e19d049f1a57951b52c3a2
 
 PKG_INSTALL:=1
 
