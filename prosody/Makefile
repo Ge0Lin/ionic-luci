@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2011 OpenWrt.org
+# Copyright (C) 2009-2012 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,14 +8,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=prosody
-PKG_VERSION:=0.9.2
-PKG_RELEASE:=3
+PKG_VERSION:=0.8.2
+PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://prosody.im/downloads/source
-PKG_MD5SUM:=bb91f73be0e19d049f1a57951b52c3a2
+PKG_MD5SUM:=6e907bf0d0acf24f1011083020ba6ffb
 
 PKG_INSTALL:=1
+
+PKG_BUILD_DEPENDS:=lua
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -39,6 +41,7 @@ define Package/prosody/conffiles
 endef
 
 TARGET_CFLAGS += $(FPIC)
+CMAKE_OPTIONS = -DLUAPATH=/usr/lib/lua
 
 define Build/Configure
 	# this is *NOT* GNU autoconf stuff
@@ -72,16 +75,20 @@ define Package/prosody/install
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/core
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/core/*.lua $(1)/usr/lib/prosody/core/
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/fallbacks
-	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/fallbacks/*.lua $(1)/usr/lib/prosody/fallbacks/
+#	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/fallbacks/*.lua $(1)/usr/lib/prosody/fallbacks/
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/modules
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/modules/*.lua $(1)/usr/lib/prosody/modules/
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/modules/muc
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/modules/muc/*.lua $(1)/usr/lib/prosody/modules/muc/
+	$(INSTALL_DIR) $(1)/usr/lib/prosody/modules/adhoc
+	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/modules/adhoc/*.lua $(1)/usr/lib/prosody/modules/adhoc/
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/net
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/net/*.lua $(1)/usr/lib/prosody/net/
 	$(INSTALL_DIR) $(1)/usr/lib/prosody/util
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/util/*.lua $(1)/usr/lib/prosody/util/
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/prosody/util/*.so $(1)/usr/lib/prosody/util/
+	$(INSTALL_DIR) $(1)/usr/lib/prosody/util/sasl
+	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/lib/prosody/util/sasl/*.lua $(1)/usr/lib/prosody/util/sasl/
 endef
 
 $(eval $(call BuildPackage,prosody))
