@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=prosody
-PKG_VERSION:=0.8.2
+PKG_VERSION:=0.9.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://prosody.im/downloads/source
-PKG_MD5SUM:=6e907bf0d0acf24f1011083020ba6ffb
+PKG_MD5SUM:=572d3f009a61e71cda6615d7a1165923
 
 PKG_INSTALL:=1
 
