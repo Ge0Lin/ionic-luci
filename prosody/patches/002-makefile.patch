@@ -102,53 +102,59 @@
  
  all: encodings.so hashes.so net.so pposix.so signal.so
  
-@@ -24,18 +22,37 @@ clean:
+@@ -24,18 +22,43 @@ clean:
  	rm -f *.so
  	rm -f ../util/*.so
  
-+encodings.o: encodings.c
-+       $(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o encodings.o encodings.c
-+
- encodings.so: encodings.o
+-encodings.so: encodings.o
 -	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(CC) -o $@ $< $(LDFLAGS) $(IDNA_LIBS)
-+       MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
-+       $(LD) $(LFLAGS) -o encodings.so encodings.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lidn
-+       
++encodings.o: encodings.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o encodings.o encodings.c
  
 -hashes.so: hashes.o
--	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
++encodings.so: encodings.o
+ 	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(CC) -o $@ $< $(LDFLAGS) -l$(OPENSSL_LIB)
-+hashes.o: hashes.c
-+       $(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o hashes.o hashes.c
++	$(LD) $(LFLAGS) -o encodings.so encodings.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lidn
  
 -.c.o:
 -	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o $@ $<
-+hashes.so: hashes.o
-+       MACOSX_DEPLOYMENT_TARGET="10.3";
-+       export MACOSX_DEPLOYMENT_TARGET;
-+       $(LD) $(LFLAGS) -o hashes.so hashes.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lcrypto
-+
-+pposix.o: pposix.c
-+       $(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o pposix.o pposix.c
-+
-+pposix.so: pposix.o
-+       MACOSX_DEPLOYMENT_TARGET="10.3";
-+       export MACOSX_DEPLOYMENT_TARGET;
-+       $(LD) $(LFLAGS) -o pposix.so pposix.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
-+       
-+signal.o: signal.c
-+       $(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o signal.o signal.c
-+
-+signal.so: signal.o
-+       MACOSX_DEPLOYMENT_TARGET="10.3";
-+       export MACOSX_DEPLOYMENT_TARGET;
-+       $(LD) $(LFLAGS) -o signal.so signal.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
-+       
++hashes.o: hashes.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o hashes.o hashes.c
  
 -.o.so:
 -	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(LD) -o $@ $< $(LDFLAGS)
++hashes.so: hashes.o
++	MACOSX_DEPLOYMENT_TARGET="10.3";
++	export MACOSX_DEPLOYMENT_TARGET;
++	$(LD) $(LFLAGS) -o hashes.so hashes.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lcrypto
++
++pposix.o: pposix.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o pposix.o pposix.c
++
++pposix.so: pposix.o
++	MACOSX_DEPLOYMENT_TARGET="10.3";
++	export MACOSX_DEPLOYMENT_TARGET;
++	$(LD) $(LFLAGS) -o pposix.so pposix.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
++       
++signal.o: signal.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o signal.o signal.c
++
++signal.so: signal.o
++	MACOSX_DEPLOYMENT_TARGET="10.3";
++	export MACOSX_DEPLOYMENT_TARGET;
++	$(LD) $(LFLAGS) -o signal.so signal.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
++       
++net.o: net.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o net.o net.c
++
++net.so: net.o
++	MACOSX_DEPLOYMENT_TARGET="10.3";
++	export MACOSX_DEPLOYMENT_TARGET;
++	$(LD) $(LFLAGS) -o net.so net.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
++       
  
 --- a/net/dns.lua
 +++ b/net/dns.lua
