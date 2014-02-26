@@ -1,5 +1,0 @@
-#!/bin/sh
-
-/etc/rc.d/S71wificonfig-enablemesh start
-
-exit 0
