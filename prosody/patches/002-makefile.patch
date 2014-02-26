@@ -1,6 +1,6 @@
 --- a/configure
 +++ b/configure
-@@ -11,16 +11,13 @@
+@@ -11,18 +11,15 @@ LUA_BINDIR="/usr/bin"
  LUA_INCDIR="/usr/include"
  LUA_LIBDIR="/usr/lib"
  IDN_LIB=idn
@@ -9,17 +9,18 @@
  CC=gcc
 -CXX=g++
  LD=gcc
+ RUNWITH=lua
+ EXCERTS=yes
  
  CFLAGS="-fPIC -Wall"
 -LDFLAGS="-shared"
--
--IDN_LIBRARY=idn
 +LFLAGS="-shared"
-+
+ 
+-IDN_LIBRARY=idn
  # Help
  
  show_help() {
-@@ -29,7 +26,7 @@
+@@ -31,7 +28,7 @@ Configure Prosody prior to building.
  
  --help                      This help.
  --ostype=OS                 Use one of the OS presets.
@@ -28,13 +29,13 @@
  --prefix=DIR                Prefix where Prosody should be installed.
                              Default is $PREFIX
  --sysconfdir=DIR            Location where the config file should be installed.
-@@ -46,15 +43,12 @@
+@@ -50,15 +47,12 @@ Configure Prosody prior to building.
                              Default is \$LUA_DIR/lib
  --with-idn=LIB              The name of the IDN library to link with.
                              Default is $IDN_LIB
----idn-library=(idn|icu)		 Select library to use for IDNA functionality.
--									 idn: use GNU libidn (default)
--									 icu: use ICU from IBM
+---idn-library=(idn|icu)     Select library to use for IDNA functionality.
+-                            idn: use GNU libidn (default)
+-                            icu: use ICU from IBM
  --with-ssl=LIB              The name of the SSL to link with.
                              Default is $OPENSSL_LIB
  --cflags=FLAGS              Flags to pass to the compiler
@@ -46,7 +47,7 @@
  --c-compiler=CC             The C compiler to use when building modules.
                              Default is $CC
  --linker=CC                 The linker to use when building modules.
-@@ -67,7 +61,7 @@
+@@ -72,7 +66,7 @@ EOF
  
  while [ "$1" ]
  do
@@ -55,154 +56,7 @@
     if echo "$value" | grep -q "~"
     then
        echo
-@@ -91,88 +85,72 @@
-    --ostype=*)
-       OSTYPE="$value"
-       OSTYPE_SET=yes
--      if [ "$OSTYPE" = "debian" ]
--      then LUA_SUFFIX="5.1";
-+      ;;
-+   --datadir=*)
-+   	DATADIR="$value"
-+   	DATADIR_SET=yes
-+      ;;
-+   --require-config)
-+      REQUIRE_CONFIG=yes
-+      ;;
-+   --lua-suffix=*)
-+      LUA_SUFFIX="$value"
-+      LUA_SUFFIX_SET=yes
-+      ;;
-+   --with-lua=*)
-+      LUA_DIR="$value"
-+      LUA_DIR_SET=yes
-+      ;;
-+   --with-lua-include=*)
-+      LUA_INCDIR="$value"
-+      LUA_INCDIR_SET=yes
-+      ;;
-+   --with-lua-lib=*)
-+      LUA_LIBDIR="$value" LUA_LIBDIR_SET=yes
-+      ;;      
-+   --with-idn=*)
-+      IDN_LIB="$value"
-+      ;;      
-+   --with-ssl=*)
-+      OPENSSL_LIB="$value"
-+      ;;      
-+   --cflags=*)
-+      CFLAGS="$value"
-+      ;;      
-+   --lflags=*)
-+      LFLAGS="$value"
-+      ;;      
-+   --c-compiler=*)
-+      CC="$value"
-+      ;;      
-+   --linker=*)
-+      LD="$value"
-+      ;;      
-+   *)
-+      echo "Error: Unknown flag: $1"
-+      exit 1
-+      ;;
-+   esac
-+   shift
-+done
-+
-+if [ "$OSTYPE_SET" = "yes" ]
-+then
-+	if [ "$OSTYPE" = "debian" ]
-+	then LUA_SUFFIX="5.1";
- 	LUA_SUFFIX_SET=yes
- 	LUA_INCDIR=/usr/include/lua5.1;
- 	LUA_INCDIR_SET=yes
- 	fi
- 	if [ "$OSTYPE" = "macosx" ]
- 	then LUA_INCDIR=/usr/local/include;
--	LUA_INCDIR_SET=yes
-+	LUA_INCDIR_SET=yes	
- 	LUA_LIBDIR=/usr/local/lib
- 	LUA_LIBDIR_SET=yes
--	LDFLAGS="-bundle -undefined dynamic_lookup"
--	fi
--        if [ "$OSTYPE" = "linux" ]
--        then LUA_INCDIR=/usr/local/include;
--        LUA_INCDIR_SET=yes
--        LUA_LIBDIR=/usr/local/lib
--        LUA_LIBDIR_SET=yes
--        CFLAGS="-Wall -fPIC"
--        LDFLAGS="-shared"
--        fi
--        if [ "$OSTYPE" = "freebsd" ]
--        then LUA_INCDIR="/usr/local/include/lua51"
--        LUA_INCDIR_SET=yes
--        CFLAGS="-Wall -fPIC -I/usr/local/include"
--        LDFLAGS="-I/usr/local/include -L/usr/local/lib -shared"
--        LUA_SUFFIX="-5.1"
--        LUA_SUFFIX_SET=yes
--        LUA_DIR=/usr/local
--        LUA_DIR_SET=yes
--        fi
--      ;;
--   --datadir=*)
--   	DATADIR="$value"
--   	DATADIR_SET=yes
--      ;;
--   --require-config)
--      REQUIRE_CONFIG=yes
--      ;;
--   --lua-suffix=*)
--      LUA_SUFFIX="$value"
--      LUA_SUFFIX_SET=yes
--      ;;
--   --with-lua=*)
--      LUA_DIR="$value"
--      LUA_DIR_SET=yes
--      ;;
--   --with-lua-include=*)
--      LUA_INCDIR="$value"
--      LUA_INCDIR_SET=yes
--      ;;
--   --with-lua-lib=*)
--      LUA_LIBDIR="$value" LUA_LIBDIR_SET=yes
--      ;;
--   --with-idn=*)
--      IDN_LIB="$value"
--      ;;
--	--idn-library=*)
--		IDN_LIBRARY="$value"
--		;;
--   --with-ssl=*)
--      OPENSSL_LIB="$value"
--      ;;
--   --cflags=*)
--      CFLAGS="$value"
--      ;;
--   --ldflags=*)
--      LDFLAGS="$value"
--      ;;
--   --c-compiler=*)
--      CC="$value"
--      ;;
--   --linker=*)
--      LD="$value"
--      ;;
--   *)
--      echo "Error: Unknown flag: $1"
--      exit 1
--      ;;
--   esac
--   shift
--done
-+	CFLAGS="-Wall"
-+	LFLAGS="-bundle -undefined dynamic_lookup"
-+	fi	
-+fi
- 
- if [ "$PREFIX_SET" = "yes" -a ! "$SYSCONFDIR_SET" = "yes" ]
- then
-@@ -269,16 +247,6 @@
+@@ -286,16 +280,6 @@ then
     LUA_BINDIR="$LUA_DIR/bin"
  fi
  
@@ -219,7 +73,7 @@
  echo -n "Checking Lua includes... "
  lua_h="$LUA_INCDIR/lua.h"
  if [ -e "$lua_h" ]
-@@ -329,12 +297,10 @@
+@@ -346,12 +330,10 @@ LUA_LIBDIR=$LUA_LIBDIR
  LUA_BINDIR=$LUA_BINDIR
  REQUIRE_CONFIG=$REQUIRE_CONFIG
  IDN_LIB=$IDN_LIB
@@ -231,54 +85,47 @@
  CC=$CC
 -CXX=$CXX
  LD=$LD
- 
- EOF
+ RUNWITH=$RUNWITH
+ EXCERTS=$EXCERTS
 --- a/util-src/Makefile
 +++ b/util-src/Makefile
-@@ -7,32 +7,45 @@
+@@ -7,12 +7,10 @@ LUA_LIB?=lua$(LUA_SUFFIX)
  IDN_LIB?=idn
  OPENSSL_LIB?=crypto
  CC?=gcc
 -CXX?=g++
  LD?=gcc
+ CFLAGS+=-ggdb
  
+ .PHONY: all install clean
 -.SUFFIXES: .c .o .so
--
+ 
+ all: encodings.so hashes.so net.so pposix.so signal.so
+ 
+@@ -24,18 +22,43 @@ clean:
+ 	rm -f *.so
+ 	rm -f ../util/*.so
+ 
 -encodings.so: encodings.o
 -	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(CC) -o $@ $< $(LDFLAGS) $(IDNA_LIBS)
--
++encodings.o: encodings.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o encodings.o encodings.c
+ 
 -hashes.so: hashes.o
--	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
++encodings.so: encodings.o
+ 	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(CC) -o $@ $< $(LDFLAGS) -l$(OPENSSL_LIB)
--
++	$(LD) $(LFLAGS) -o encodings.so encodings.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lidn
+ 
 -.c.o:
 -	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o $@ $<
--
++hashes.o: hashes.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o hashes.o hashes.c
+ 
 -.o.so:
 -	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
 -	$(LD) -o $@ $< $(LDFLAGS)
- 
- all: encodings.so hashes.so pposix.so signal.so
- 
- install: encodings.so hashes.so pposix.so signal.so
- 	install *.so ../util/
-+	
- 
- clean:
- 	rm -f *.o
- 	rm -f *.so
- 	rm -f ../util/*.so
-+
-+encodings.o: encodings.c
-+	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o encodings.o encodings.c
-+encodings.so: encodings.o
-+	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET;
-+	$(LD) $(LFLAGS) -o encodings.so encodings.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX) -lidn
-+	
-+
-+hashes.o: hashes.c
-+	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o hashes.o hashes.c
 +hashes.so: hashes.o
 +	MACOSX_DEPLOYMENT_TARGET="10.3";
 +	export MACOSX_DEPLOYMENT_TARGET;
@@ -286,25 +133,36 @@
 +
 +pposix.o: pposix.c
 +	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o pposix.o pposix.c
++
 +pposix.so: pposix.o
 +	MACOSX_DEPLOYMENT_TARGET="10.3";
 +	export MACOSX_DEPLOYMENT_TARGET;
 +	$(LD) $(LFLAGS) -o pposix.so pposix.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
-+	
++       
 +signal.o: signal.c
 +	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o signal.o signal.c
++
 +signal.so: signal.o
 +	MACOSX_DEPLOYMENT_TARGET="10.3";
 +	export MACOSX_DEPLOYMENT_TARGET;
 +	$(LD) $(LFLAGS) -o signal.so signal.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
-+	
++       
++net.o: net.c
++	$(CC) $(CFLAGS) -I$(LUA_INCDIR) -c -o net.o net.c
++
++net.so: net.o
++	MACOSX_DEPLOYMENT_TARGET="10.3";
++	export MACOSX_DEPLOYMENT_TARGET;
++	$(LD) $(LFLAGS) -o net.so net.o -L$(LUA_LIBDIR) -llua$(LUA_SUFFIX)
++       
+ 
 --- a/net/dns.lua
 +++ b/net/dns.lua
-@@ -223,7 +223,7 @@
+@@ -223,7 +223,7 @@ end
  
  
  function dns.random(...)    -- - - - - - - - - - - - - - - - - - -  dns.random
--	math.randomseed(math.floor(10000*socket.gettime()));
+-	math.randomseed(math.floor(10000*socket.gettime()) % 0x100000000);
 +	math.randomseed(math.floor(10000*socket.gettime()) % 0x80000000);
  	dns.random = math.random;
  	return dns.random(...);
