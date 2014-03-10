@@ -1,5 +1,0 @@
-#!/bin/sh
-
-/etc/rc.d/S72wificonfig-lucimesh start
-
-exit 0

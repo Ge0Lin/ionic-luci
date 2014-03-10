@@ -1,5 +1,0 @@
-#!/bin/sh
-
-/etc/rc.d/S73wificonfig-lucimeshauthsae start
-
-exit 0
