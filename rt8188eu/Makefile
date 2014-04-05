@@ -5,11 +5,11 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
-RT8188EU_VERSION=20140404
-RT8188EU_RELEASE=1
+RTL8188EU_VERSION=20140404
+RTL8188EU_RELEASE=1
 
-PKG_NAME:=kmod-rtl8188eu
-PKG_VERSION:=$(RT8188EU_VERSION)
+PKG_NAME:=rtl8188eu
+PKG_VERSION:=$(RTL8188EU_VERSION)
 PKG_RELEASE:=1
 PKG_REV:=fcc9034b0d2170b4942133a43a9521aab2e0beac
 
@@ -42,9 +42,8 @@ endif
 RT8188EU_AUTOLOAD:= \
 	wlan
 
-define KernelPackage/rt8188eu
+define KernelPackage/rtl8188eu
   SUBMENU:=Wireless Drivers
-  DEFAULT:=y if LINUX_2_6_BRCM |  LINUX_2_6_ARUBA |  LINUX_2_4_AR531X |  LINUX_2_6_XSCALE, m if ALL
   TITLE:=Realtek RTL8188EU
   DESCRIPTION:=\
 	This package contains a driver for the RTL8188EU
@@ -54,6 +53,10 @@ define KernelPackage/rt8188eu
 		$(BUS_MODULES) \
 		$(PKG_BUILD_DIR)/net80211/wlan*.$(LINUX_KMOD_SUFFIX)
   AUTOLOAD:=$(call AutoLoad,50,$(RT8188EU_AUTOLOAD))
+endef
+
+define KernelPackage/rtl8188eu/description
+  Kernel module for the RTL8188EU chipset
 endef
 
 define Build/Compile
@@ -67,4 +70,6 @@ endef
 define KernelPackage/rt8188eu/install
 
 endef
+
+$(eval $(call KernelPackage,rtl8188eu))
 
