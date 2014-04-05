@@ -8,7 +8,7 @@ include $(INCLUDE_DIR)/kernel.mk
 RT8188EU_VERSION=20140404
 RT8188EU_RELEASE=1
 
-PKG_NAME:=rt8188eu
+PKG_NAME:=kmod-rtl8188eu
 PKG_VERSION:=$(RT8188EU_VERSION)
 PKG_RELEASE:=1
 PKG_REV:=fcc9034b0d2170b4942133a43a9521aab2e0beac
@@ -45,9 +45,9 @@ RT8188EU_AUTOLOAD:= \
 define KernelPackage/rt8188eu
   SUBMENU:=Wireless Drivers
   DEFAULT:=y if LINUX_2_6_BRCM |  LINUX_2_6_ARUBA |  LINUX_2_4_AR531X |  LINUX_2_6_XSCALE, m if ALL
-  TITLE:=Driver for RT8188EU
+  TITLE:=Realtek RTL8188EU
   DESCRIPTION:=\
-	This package contains a driver for the RT8188EU
+	This package contains a driver for the RTL8188EU
   VERSION:=$(LINUX_VERSION)+$(PKG_VERSION)-$(BOARD)-$(PKG_RELEASE)
   FILES:= \
 		$(PKG_BUILD_DIR)/ath/ath_hal.$(LINUX_KMOD_SUFFIX) \
