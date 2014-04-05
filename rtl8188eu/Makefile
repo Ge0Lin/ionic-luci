@@ -48,12 +48,11 @@ define KernelPackage/rtl8188eu
   URL:=http://github.com/lwfinger/rtl8188eu.git
   DEPENDS:=wireless-tools
   VERSION:=$(LINUX_VERSION)+$(PKG_VERSION)-$(BOARD)-$(PKG_RELEASE)
-#  FILES:= \
-#		$(PKG_BUILD_DIR)/ath/ath_hal.$(LINUX_KMOD_SUFFIX) \
-#		$(BUS_MODULES) \
-#		$(PKG_BUILD_DIR)/net80211/wlan*.$(LINUX_KMOD_SUFFIX)
+  FILES:= \
+		$(PKG_BUILD_DIR)/ath/ath_hal.$(LINUX_KMOD_SUFFIX) \
+		$(BUS_MODULES) \
+		$(PKG_BUILD_DIR)/net80211/wlan*.$(LINUX_KMOD_SUFFIX)
   AUTOLOAD:=$(call AutoLoad,50,$(RT8188EU_AUTOLOAD))
-  MENU:=1
 endef
 
 define KernelPackage/rtl8188eu/description
