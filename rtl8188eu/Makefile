@@ -36,5 +36,17 @@ define KernelPackage/rtl8188eu/description
   Kernel module for the RTL8188EU chipset
 endef
 
+MAKE_OPTS:= \
+    ARCH="$(LINUX_KARCH)" \
+    CROSS_COMPILE="$(TARGET_CROSS)" \
+    SUBDIRS="$(PKG_BUILD_DIR)" \
+    EXTRA_CFLAGS="$(EXTRA_CFLAGS)" \
+    LINUXINCLUDE="-I$(LINUX_DIR)/include -include linux/autoconf.h" \
+    $(EXTRA_KCONFIG)
+
+define Build/Compile
+  $(MAKE) -C "$(LINUX_DIR) $(MAKE_OPTS) modules
+endef
+
 $(eval $(call KernelPackage,rtl8188eu))
 
