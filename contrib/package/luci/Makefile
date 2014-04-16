@@ -522,6 +522,7 @@ $(eval $(call theme,freifunk-generic,Freifunk Generic Theme,\
 	Manuel Munz <freifunk-at-somakoma-dot-de>))
 
 $(eval $(call theme,cloak,Cloak Theme))
+$(eval $(call theme,thingmesh,ThingMesh Theme))
 
 ### Translations ###
 define translation
