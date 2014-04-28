@@ -5,16 +5,16 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
-RTL8188EU_VERSION=20140404
+RTL8188EU_VERSION=20140428
 RTL8188EU_RELEASE=1
 
 PKG_NAME:=rtl8188eu
 PKG_VERSION:=$(RTL8188EU_VERSION)
 PKG_RELEASE:=1
-PKG_REV:=fcc9034b0d2170b4942133a43a9521aab2e0beac
+PKG_REV:=63fe7cda86c2830d66335026efde7472c10bc5c2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/lwfinger/rtl8188eu.git
+PKG_SOURCE_URL:=https://github.com/ThingMesh/rtl8188eu.git
 PKG_SOURCE_SUBDIR:=rtl8188eu-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=$(PKG_REV)
 PKG_SOURCE_PROTO:=git
@@ -43,6 +43,11 @@ MAKE_OPTS:= \
     EXTRA_CFLAGS="$(EXTRA_CFLAGS)" \
     LINUXINCLUDE="-I$(LINUX_DIR)/include -include linux/autoconf.h" \
     $(EXTRA_KCONFIG)
+
+define Build/Prepare
+    mkdir -p $(PKG_BUILD_DIR)
+    $(CP) ./src/* $(PKG_BUILD_DIR)/
+endef
 
 define Build/Compile
   $(MAKE) -C "$(LINUX_DIR) $(MAKE_OPTS) modules
