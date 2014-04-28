@@ -1,6 +1,3 @@
-#
-# Copyright (c) 2014 Lars Boegild Thomsen <lth@cow.dk>
-#
 
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
@@ -41,7 +38,7 @@ MAKE_OPTS:= \
 	ARCH="$(LINUX_KARCH)" \
 	CROSS_COMPILE="$(TARGET_CROSS)" \
 	SUBDIRS="$(PKG_BUILD_DIR)" \
-	EXTRA_CFLAGS="$(EXTRA_CFLAGS) -I$(PKG_BUILD_DIR)/include" 
+	EXTRA_CFLAGS="$(EXTRA_CFLAGS) -I$(PKG_BUILD_DIR)/include -Os -s" 
 
 define Build/Prepare
 	rm -rf $(PKG_BUILD_DIR)
@@ -51,7 +48,8 @@ endef
 
 define Build/Compile
 	echo "Building RTL8188EU Driver"
-	CONFIG_RTL8188EU=m $(MAKE) -C "$(LINUX_DIR)" $(MAKE_OPTS) modules
+	CONFIG_RTL8188EU=m $(MAKE) -C "$(LINUX_DIR)" $(MAKE_OPTS) modules 
+	$(TARGET_CROSS)strip $(PKG_BUILD_DIR)/8188eu.ko --strip-unneeded
 endef
 
 $(eval $(call KernelPackage,rtl8188eu))
