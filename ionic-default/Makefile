@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/ionic-default
   SECTION:=utils
-  CATEGORY:=Base system
+  CATEGORY:=Ionic
   TITLE:=Default Ionic Configurations
   DEPENDS:=+base-files
 endef

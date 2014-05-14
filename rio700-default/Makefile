@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/rio700-default
   SECTION:=utils
-  CATEGORY:=Base system
+  CATEGORY:=Ionic
   TITLE:=Default Rio 700 Configuration
   DEPENDS:=+base-files
 endef
