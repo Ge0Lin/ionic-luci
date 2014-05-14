@@ -523,6 +523,7 @@ $(eval $(call theme,freifunk-generic,Freifunk Generic Theme,\
 
 $(eval $(call theme,cloak,Cloak Theme))
 $(eval $(call theme,thingmesh,ThingMesh Theme))
+$(eval $(call theme,ionic,Ionic Theme))
 
 ### Translations ###
 define translation
