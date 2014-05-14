@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	delete uhttpd.main.listen_http
+	add_list uhttpd.main.listen_http=10000
+	commit uhttpd
+EOF
+exit 0

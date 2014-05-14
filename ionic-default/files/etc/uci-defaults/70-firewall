@@ -1,0 +1,23 @@
+#!/bin/sh
+uci batch <<-EOF
+	add firewall rule
+	set firewall.@rule[-1].name=ssh
+	set firewall.@rule[-1].src=wan
+	set firewall.@rule[-1].target=ACCEPT
+	set firewall.@rule[-1].proto=tcp
+	set firewall.@rule[-1].dest_port=22
+	add firewall rule
+	set firewall.@rule[-1].name=http
+	set firewall.@rule[-1].src=wan
+	set firewall.@rule[-1].target=ACCEPT
+	set firewall.@rule[-1].proto=tcp
+	set firewall.@rule[-1].dest_port=80
+	add firewall rule
+	set firewall.@rule[-1].name=luci
+	set firewall.@rule[-1].src=wan
+	set firewall.@rule[-1].target=ACCEPT
+	set firewall.@rule[-1].proto=tcp
+	set firewall.@rule[-1].dest_port=10000
+	uci commit firewall
+EOF
+exit 0
