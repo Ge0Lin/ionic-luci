@@ -20,9 +20,9 @@ define Package/ionic-default
   DEPENDS:=+base-files
 endef
 
-#define Package/ionic-default/conffiles
-#/etc/IONIC_VERSION
-#endef
+define Package/ionic-default/conffiles
+/etc/shadow
+endef
 
 define Build/Compile
 	# NOOP
@@ -30,6 +30,8 @@ endef
 
 define Package/ionic-default/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
+	$(INSTALL_CONF) ./files/etc/shadow $(1)/etc
+	$(INSTALL_CONF) ./files/etc/banner $(1)/etc
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-hostname $(1)/etc/uci-defaults
 endef
 
