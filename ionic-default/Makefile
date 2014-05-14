@@ -30,7 +30,7 @@ endef
 
 define Package/ionic-default/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_CONF) ./files/etc/uci-defaults/80-hostname $(1)/etc/uci-defaults
+	$(INSTALL_CONF) ./files/etc/uci-defaults/70-hostname $(1)/etc/uci-defaults
 endef
 
 $(eval $(call BuildPackage,ionic-default))

@@ -17,7 +17,7 @@ define Package/rio700-default
   SECTION:=utils
   CATEGORY:=Ionic
   TITLE:=Default Rio 700 Configuration
-  DEPENDS:=+base-files
+  DEPENDS:=+base-files +ionic-default
 endef
 
 define Package/rio700-default/conffiles

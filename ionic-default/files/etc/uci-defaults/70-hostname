@@ -1,0 +1,7 @@
+#!/bin/sh
+MACADDR=`ifconfig eth0|grep HWaddr|sed -e 's/^.*HWaddr //g' -e 's/://g'`
+uci batch <<-EOF
+	set system.@system[0].hostname=ionic-$MACADDR
+	commit system
+EOF
+exit 0
