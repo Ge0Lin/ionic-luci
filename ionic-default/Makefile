@@ -29,7 +29,7 @@ define Build/Compile
 endef
 
 define Package/ionic-default/install
-	$(INSTALL_DIR) $(1)/etc
+	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/uci-defaults/80-hostname $(1)/etc/uci-defaults
 endef
 
