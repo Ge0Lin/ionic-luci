@@ -22,6 +22,9 @@ endef
 
 define Package/ionic-default/conffiles
 /etc/shadow
+/etc/uci-defaults/70-firewall
+/etc/uci-defaults/70-hostname
+/etc/uci-defaults/70-uhttpd
 endef
 
 define Build/Compile
