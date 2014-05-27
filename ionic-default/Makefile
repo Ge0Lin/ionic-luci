@@ -33,8 +33,8 @@ endef
 
 define Package/ionic-default/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_DIR) $(1)/etc/hotplug-d
-	$(INSTALL_DIR) $(1)/etc/hotplug-d/iface
+	$(INSTALL_DIR) $(1)/etc/hotplug.d
+	$(INSTALL_DIR) $(1)/etc/hotplug.d/iface
 	$(INSTALL_DIR) $(1)/usr
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_CONF) ./files/etc/shadow $(1)/etc
