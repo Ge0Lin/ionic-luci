@@ -1,0 +1,6 @@
+#!/bin/sh
+logger -t hotplug "Action: $ACTION Interface: $INTERFACE"
+#if [ $ACTION == "ifup" ]; then
+#	logger -t HOTPLUG "Device $INTERFACE started - updating DDNS"
+#	/usr/bin/ddnsup
+#fi

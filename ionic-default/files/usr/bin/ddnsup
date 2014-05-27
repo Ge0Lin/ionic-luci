@@ -1,0 +1,8 @@
+#!/bin/sh
+
+HOST=`uci get system.@system[0].hostname`
+MAC=`ifconfig eth0 | grep HWaddr | sed 's/^.*HWaddr //g' | sed 's/://g' | sed 's/ *//g' | tr [A-Z] [a-z] `
+
+IPCHECK=`curl -6 -s "http://ddns.bright-things.net/?mac=$MAC&host=$HOST" 2>/dev/null | grep "IP Address" | sed 's/^.*Address: //g' | sed 's/<\/body.*$//g'`
+
+echo "Result: $IPCHECK"
