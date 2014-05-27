@@ -35,7 +35,7 @@ define Package/ionic-default/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/shadow $(1)/etc
 	$(INSTALL_CONF) ./files/etc/banner $(1)/etc
-	$(INSTALL_CONF) ./files/etc/modprobe.d/iface/99-ddnsupdate $(1)/etc/modprobe.d/iface
+	$(INSTALL_CONF) ./files/etc/hotplug.d/iface/99-ddnsupdate $(1)/etc/hotplug.d/iface
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-firewall $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-hostname $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-uhttpd $(1)/etc/uci-defaults
