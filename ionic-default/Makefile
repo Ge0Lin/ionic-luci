@@ -39,7 +39,7 @@ define Package/ionic-default/install
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-firewall $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-hostname $(1)/etc/uci-defaults
 	$(INSTALL_CONF) ./files/etc/uci-defaults/70-uhttpd $(1)/etc/uci-defaults
-endef
 	$(INSTALL_BIN) ./files/usr/bin/ddnsup $(1)/usr/bin
+endef
 
 $(eval $(call BuildPackage,ionic-default))
