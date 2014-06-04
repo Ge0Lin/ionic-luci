@@ -30,7 +30,8 @@ endef
 
 define Package/rio700-default/install
 	$(INSTALL_DIR) $(1)/etc
-	$(INSTALL_CONF) ./files/etc/RIO700-VERSION $(1)/etc/
+	$(INSTALL_DIR) $(1)/etc/modules.d
+	$(INSTALL_CONF) ./files/etc/modules.d/50-i2c-gpio-custom $(1)/etc/
 endef
 
 $(eval $(call BuildPackage,rio700-default))
