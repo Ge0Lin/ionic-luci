@@ -289,13 +289,9 @@ $(eval $(call theme,openwrt,OpenWrt.org))
 $(eval $(call theme,bootstrap,Bootstrap Theme (default)))
 
 
-<<<<<<< HEAD
-$(eval $(call theme,cloak,Cloak))
-=======
 $(eval $(call theme,cloak,Cloak Theme))
 $(eval $(call theme,thingmesh,ThingMesh Theme))
 $(eval $(call theme,ionic,Ionic Theme))
->>>>>>> 0fd5828b33b0a3789ef4053352c60d94f77714c1
 
 ### Translations ###
 define translation
