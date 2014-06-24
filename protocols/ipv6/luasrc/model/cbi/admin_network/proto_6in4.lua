@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 local map, section, net = ...
 
-local ipaddr, peeraddr, ip6addr, tunnelid, username, password
+local ipaddr, peeraddr, ip6addr, tunnelid, username, updatekey
 local defaultroute, metric, ttl, mtu
 
 
@@ -67,14 +67,14 @@ tunnelid:depends("_update", update.enabled)
 
 username = section:taboption("general", Value, "username",
 	translate("HE.net user ID"),
-	translate("This is the 32 byte hex encoded user ID, not the login name"))
+	translate("This is your HE.net login name"))
 
 username:depends("_update", update.enabled)
 
 
-password = section:taboption("general", Value, "password", translate("HE.net password"))
-password.password = true
-password:depends("_update", update.enabled)
+updatekey = section:taboption("general", Value, "updatekey", translate("HE.net Update Key"))
+updatekey.updatekey = true
+updatekey:depends("_update", update.enabled)
 
 
 defaultroute = section:taboption("advanced", Flag, "defaultroute",

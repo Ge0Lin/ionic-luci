@@ -192,6 +192,7 @@ endef
 $(eval $(call protocol,ppp,Support for PPP/PPPoE/PPPoA/PPtP))
 $(eval $(call protocol,ipv6,Support for DHCPv6/6in4/6to4/6rd/DS-Lite))
 $(eval $(call protocol,3g,Support for 3G,+PACKAGE_luci-proto-3g:comgt))
+$(eval $(call protocol,batman-adv,Support for Batman-Adv,+PACKAGE_luci-proto-batadv))
 $(eval $(call protocol,relay,Support for relayd pseudo bridges,+PACKAGE_luci-proto-relay:relayd))
 
 
@@ -288,7 +289,13 @@ $(eval $(call theme,openwrt,OpenWrt.org))
 $(eval $(call theme,bootstrap,Bootstrap Theme (default)))
 
 
+<<<<<<< HEAD
 $(eval $(call theme,cloak,Cloak))
+=======
+$(eval $(call theme,cloak,Cloak Theme))
+$(eval $(call theme,thingmesh,ThingMesh Theme))
+$(eval $(call theme,ionic,Ionic Theme))
+>>>>>>> 0fd5828b33b0a3789ef4053352c60d94f77714c1
 
 ### Translations ###
 define translation

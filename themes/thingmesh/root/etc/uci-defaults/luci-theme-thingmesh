@@ -1,0 +1,6 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.ThingMesh=/luci-static/thingmesh
+	commit luci
+EOF
+exit 0

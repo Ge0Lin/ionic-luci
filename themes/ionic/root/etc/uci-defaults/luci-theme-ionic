@@ -1,0 +1,6 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Ionic=/luci-static/ionic
+	commit luci
+EOF
+exit 0

@@ -769,13 +769,8 @@ header h3 {
 header h3 a, header .brand {
 	float: left;
 	display: block;
-<<<<<<< HEAD
-	padding: 8px 20px 12px;
-	margin-left: -20px;
-=======
 	padding: 4px 20px 0px 0px;
 	margin-left: 0px;
->>>>>>> 0fd5828b33b0a3789ef4053352c60d94f77714c1
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: 200;
