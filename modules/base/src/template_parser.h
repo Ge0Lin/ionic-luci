@@ -58,7 +58,7 @@ struct template_chunk {
 struct template_parser {
 	int fd;
 	uint32_t size;
-	char *mmap;
+	char *data;
 	char *off;
 	char *gc;
 	int line;
@@ -71,6 +71,7 @@ struct template_parser {
 };
 
 struct template_parser * template_open(const char *file);
+struct template_parser * template_string(const char *str, uint32_t len);
 void template_close(struct template_parser *parser);
 
 const char *template_reader(lua_State *L, void *ud, size_t *sz);

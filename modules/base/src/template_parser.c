@@ -66,7 +66,7 @@ static char *strfind(char *haystack, int hslen, const char *needle, int ndlen)
 struct template_parser * template_open(const char *file)
 {
 	struct stat s;
-	static struct template_parser *parser;
+	struct template_parser *parser;
 
 	if (!(parser = malloc(sizeof(*parser))))
 		goto err;
@@ -82,18 +82,48 @@ struct template_parser * template_open(const char *file)
 		goto err;
 
 	parser->size = s.st_size;
-	parser->mmap = mmap(NULL, parser->size, PROT_READ, MAP_PRIVATE,
+	parser->data = mmap(NULL, parser->size, PROT_READ, MAP_PRIVATE,
 						parser->fd, 0);
 
-	if (parser->mmap != MAP_FAILED)
+	if (parser->data != MAP_FAILED)
 	{
-		parser->off = parser->mmap;
+		parser->off = parser->data;
 		parser->cur_chunk.type = T_TYPE_INIT;
-		parser->cur_chunk.s    = parser->mmap;
-		parser->cur_chunk.e    = parser->mmap;
+		parser->cur_chunk.s    = parser->data;
+		parser->cur_chunk.e    = parser->data;
 
 		return parser;
 	}
+
+err:
+	template_close(parser);
+	return NULL;
+}
+
+struct template_parser * template_string(const char *str, uint32_t len)
+{
+	struct template_parser *parser;
+
+	if (!str) {
+		errno = EINVAL;
+		goto err;
+	}
+
+	if (!(parser = malloc(sizeof(*parser))))
+		goto err;
+
+	memset(parser, 0, sizeof(*parser));
+	parser->fd = -1;
+
+	parser->size = len;
+	parser->data = (char*)str;
+
+	parser->off = parser->data;
+	parser->cur_chunk.type = T_TYPE_INIT;
+	parser->cur_chunk.s    = parser->data;
+	parser->cur_chunk.e    = parser->data;
+
+	return parser;
 
 err:
 	template_close(parser);
@@ -108,11 +138,14 @@ void template_close(struct template_parser *parser)
 	if (parser->gc != NULL)
 		free(parser->gc);
 
-	if ((parser->mmap != NULL) && (parser->mmap != MAP_FAILED))
-		munmap(parser->mmap, parser->size);
+	/* if file is not set, we were parsing a string */
+	if (parser->file) {
+		if ((parser->data != NULL) && (parser->data != MAP_FAILED))
+			munmap(parser->data, parser->size);
 
-	if (parser->fd >= 0)
-		close(parser->fd);
+		if (parser->fd >= 0)
+			close(parser->fd);
+	}
 
 	free(parser);
 }
@@ -121,7 +154,7 @@ void template_text(struct template_parser *parser, const char *e)
 {
 	const char *s = parser->off;
 
-	if (s < (parser->mmap + parser->size))
+	if (s < (parser->data + parser->size))
 	{
 		if (parser->strip_after)
 		{
@@ -291,7 +324,7 @@ template_format_chunk(struct template_parser *parser, size_t *sz)
 const char *template_reader(lua_State *L, void *ud, size_t *sz)
 {
 	struct template_parser *parser = ud;
-	int rem = parser->size - (parser->off - parser->mmap);
+	int rem = parser->size - (parser->off - parser->data);
 	char *tag;
 
 	parser->prv_chunk = parser->cur_chunk;
@@ -314,8 +347,8 @@ const char *template_reader(lua_State *L, void *ud, size_t *sz)
 		}
 		else
 		{
-			template_text(parser, parser->mmap + parser->size);
-			parser->off = parser->mmap + parser->size;
+			template_text(parser, parser->data + parser->size);
+			parser->off = parser->data + parser->size;
 		}
 	}
 
@@ -331,7 +364,7 @@ const char *template_reader(lua_State *L, void *ud, size_t *sz)
 		else
 		{
 			/* unexpected EOF */
-			template_code(parser, parser->mmap + parser->size);
+			template_code(parser, parser->data + parser->size);
 
 			*sz = 1;
 			return "\033";
@@ -366,17 +399,17 @@ int template_error(lua_State *L, struct template_parser *parser)
 
 	if (strfind((char *)err, strlen(err), "'char(27)'", 10) != NULL)
 	{
-		off = parser->mmap + parser->size;
+		off = parser->data + parser->size;
 		err = "'%>' expected before end of file";
 		chunkline = 0;
 	}
 
-	for (ptr = parser->mmap; ptr < off; ptr++)
+	for (ptr = parser->data; ptr < off; ptr++)
 		if (*ptr == '\n')
 			line++;
 
 	snprintf(msg, sizeof(msg), "Syntax error in %s:%d: %s",
-			 parser->file, line + chunkline, err ? err : "(unknown error)");
+			 parser->file ? parser->file : "[string]", line + chunkline, err ? err : "(unknown error)");
 
 	lua_pushnil(L);
 	lua_pushinteger(L, line + chunkline);
