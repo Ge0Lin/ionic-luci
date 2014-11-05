@@ -194,7 +194,7 @@ $(eval $(call protocol,ipv6,Support for DHCPv6/6in4/6to4/6rd/DS-Lite))
 $(eval $(call protocol,3g,Support for 3G,+PACKAGE_luci-proto-3g:comgt))
 $(eval $(call protocol,batman-adv,Support for Batman-Adv,+PACKAGE_luci-proto-batadv))
 $(eval $(call protocol,relay,Support for relayd pseudo bridges,+PACKAGE_luci-proto-relay:relayd))
-
+$(eval $(call protocol,openconnect,Support for OpenConnect VPN,+openconnect))
 
 ### Modules ###
 define module
@@ -252,7 +252,6 @@ define application
   LUCI_BUILD_PACKAGES += luci-app-$(1)
 endef
 
-
 $(eval $(call application,firewall,Firewall and Portforwarding application,\
 	+PACKAGE_luci-app-firewall:firewall))
 
@@ -287,10 +286,7 @@ endef
 
 $(eval $(call theme,openwrt,OpenWrt.org))
 $(eval $(call theme,bootstrap,Bootstrap Theme (default)))
-
-
 $(eval $(call theme,cloak,Cloak Theme))
-$(eval $(call theme,thingmesh,ThingMesh Theme))
 $(eval $(call theme,ionic,Ionic Theme))
 
 ### Translations ###

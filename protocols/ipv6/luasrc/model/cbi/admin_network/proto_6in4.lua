@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 local map, section, net = ...
 
-local ipaddr, peeraddr, ip6addr, tunnelid, username, updatekey
+local ipaddr, peeraddr, ip6addr, tunnelid, username, password
 local defaultroute, metric, ttl, mtu
 
 
