@@ -1,22 +1,15 @@
 <%#
-LuCI - Lua Configuration Interface
-Copyright 2008 Steven Barth <steven@midlink.org>
-Copyright 2008-2010 Jo-Philipp Wich <xm@subsignal.org>
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-	http://www.apache.org/licenses/LICENSE-2.0
-
-$Id$
-
+ Copyright 2008 Steven Barth <steven@midlink.org>
+ Copyright 2008-2010 Jo-Philipp Wich <jow@openwrt.org>
+ Licensed to the public under the Apache License 2.0.
 -%>
+
 <%
 	local sys  = require "luci.sys"
 	local util = require "luci.util"
 	local http = require "luci.http"
 	local disp = require "luci.dispatcher"
+	local ver  = require "luci.version"
 
 	local sysinfo = util.ubus("system", "info") or { }
 	local loadinfo = sysinfo.load or { 0, 0, 0 }
@@ -127,7 +120,7 @@ $Id$
 <h2 class="navigation"><a id="navigation" name="navigation"><%:Navigation%></a></h2>
 
 <div class="hostinfo">
-	<%=(boardinfo.hostname or "?")%> | <%=luci.version.distversion%> |
+	<%=(boardinfo.hostname or "?")%> | <%=ver.distversion%> |
 	<%:Load%>: <%="%.2f" % loadinfo[1] / 65535.0%> <%="%.2f" % loadinfo[2] / 65535.0%> <%="%.2f" % loadinfo[3] / 65535.0%>
 	<span id="xhr_poll_status" style="display:none" onclick="XHR.running() ? XHR.halt() : XHR.run()">
 		| <%:Auto Refresh%>:

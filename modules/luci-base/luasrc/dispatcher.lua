@@ -1,33 +1,9 @@
---[[
-LuCI - Dispatcher
-
-Description:
-The request dispatcher and module dispatcher generators
-
-FileId:
-$Id$
-
-License:
-Copyright 2008 Steven Barth <steven@midlink.org>
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-	http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-]]--
+-- Copyright 2008 Steven Barth <steven@midlink.org>
+-- Licensed to the public under the Apache License 2.0.
 
 --- LuCI web dispatcher.
 local fs = require "nixio.fs"
 local sys = require "luci.sys"
-local init = require "luci.init"
 local util = require "luci.util"
 local http = require "luci.http"
 local nixio = require "nixio", require "nixio.util"
@@ -357,7 +333,7 @@ function dispatch(request)
 		else
 			local eu = http.getenv("HTTP_AUTH_USER")
 			local ep = http.getenv("HTTP_AUTH_PASS")
-			if eu and ep and luci.sys.user.checkpasswd(eu, ep) then
+			if eu and ep and sys.user.checkpasswd(eu, ep) then
 				authen = function() return eu end
 			end
 		end
@@ -365,20 +341,20 @@ function dispatch(request)
 		if not util.contains(accs, user) then
 			if authen then
 				ctx.urltoken.stok = nil
-				local user, sess = authen(luci.sys.user.checkpasswd, accs, def)
+				local user, sess = authen(sys.user.checkpasswd, accs, def)
 				if not user or not util.contains(accs, user) then
 					return
 				else
 					if not sess then
 						local sdat = util.ubus("session", "create", { timeout = luci.config.sauth.sessiontime })
 						if sdat then
-							local token = luci.sys.uniqueid(16)
+							local token = sys.uniqueid(16)
 							util.ubus("session", "set", {
 								ubus_rpc_session = sdat.ubus_rpc_session,
 								values = {
 									user = user,
 									token = token,
-									section = luci.sys.uniqueid(16)
+									section = sys.uniqueid(16)
 								}
 							})
 							sess = sdat.ubus_rpc_session
@@ -403,11 +379,11 @@ function dispatch(request)
 	end
 
 	if track.setgroup then
-		luci.sys.process.setgroup(track.setgroup)
+		sys.process.setgroup(track.setgroup)
 	end
 
 	if track.setuser then
-		luci.sys.process.setuser(track.setuser)
+		sys.process.setuser(track.setuser)
 	end
 
 	local target = nil
