@@ -20,7 +20,7 @@
 
 <div id="navigation">
 <%=luadoc.doclet.html.include("menu.lp", { doc=doc, module_doc=module_doc })%>
-<% oop = ( module_doc.doc[1].cstyle == "instance" ) and true or false %>
+<% oop = not not ( module_doc.doc[1] and module_doc.doc[1].cstyle == "instance" ) %>
 
 </div><!-- id="navigation" -->
 
@@ -58,13 +58,34 @@
 </table>
 <%end%>
 
-<%if #module_doc.functions > 0 then %>
+<% local funcs = { }; if #module_doc.functions > 0 then %>
 <h2>Functions</h2>
 <table class="function_list">
-<%for _, func_name in ipairs(module_doc.functions) do
-  local func_data = module_doc.functions[func_name]%>
+<%
+for _, func_name in ipairs(module_doc.functions) do
+  funcs[#funcs+1] = func_name
+end
+
+table.sort(funcs, function(a, b)
+  local func_data_a = module_doc.functions[a]
+  local func_data_b = module_doc.functions[b]
+  local x = func_data_a.sort or a
+  local y = func_data_b.sort or b
+  return x < y
+end)
+
+for _, func_name in ipairs(funcs) do
+  local func_data = module_doc.functions[func_name]
+
+  func_data.printname = func_name:gsub("^%d+#", "")
+  if oop then
+	func_data.printname = func_data.printname:gsub("%.", ":")
+  else
+    func_data.printname = func_data.printname:gsub("^.+%.", "")
+  end
+%>
 	<tr>
-	<td class="name" nowrap><%=func_data.private and "local " or ""%><a href="#<%=func_name%>"><%=(oop and func_name:gsub("%.",":") or func_name:gsub(".+%.",""))%></a>&nbsp;(<%=table.concat(module_doc.functions[func_name].param or {}, ", ")%>)</td>
+	<td class="name" nowrap><%=func_data.private and "local " or ""%><a href="#<%=func_name%>"><%=func_data.printname%></a>&nbsp;(<%=table.concat(module_doc.functions[func_name].param or {}, ", ")%>)</td>
 	<td class="summary"><%=module_doc.functions[func_name].summary%></td>
 	</tr>
 <%end%>
@@ -72,10 +93,24 @@
 <%end%>
 
 
-<%if #module_doc.tables > 0 then%>
+<% local tabs = { }; if #module_doc.tables > 0 then%>
 <h2>Tables</h2>
 <table class="table_list">
-<%for _, tab_name in ipairs(module_doc.tables) do%>
+<%
+for _, tab_name in ipairs(module_doc.tables) do
+  tabs[#tabs+1] = tab_name
+end
+
+table.sort(tabs, function(a, b)
+  local tab_data_a = module_doc.tables[a]
+  local tab_data_b = module_doc.tables[b]
+  local x = tab_data_a.sort or a
+  local y = tab_data_b.sort or b
+  return x < y
+end)
+
+for _, tab_name in ipairs(tabs) do
+%>
 	<tr>
 	<td class="name" nowrap><a href="#<%=tab_name%>"><%=tab_name%></a></td>
 	<td class="summary"><%=module_doc.tables[tab_name].summary%></td>
@@ -91,7 +126,7 @@
 <%if #module_doc.functions > 0 then%>
 <h2><a name="functions"></a>Functions</h2>
 <dl class="function">
-<%for _, func_name in ipairs(module_doc.functions) do%>
+<%for _, func_name in ipairs(funcs) do%>
 <%=luadoc.doclet.html.include("function.lp", { doc=doc, module_doc=module_doc, func=module_doc.functions[func_name], oop=oop })%>
 <%end%>
 </dl>
@@ -100,7 +135,7 @@
 <%if #module_doc.tables > 0 then%>
 <h2><a name="tables"></a>Tables</h2>
 <dl class="table">
-<%for _, tab_name in ipairs(module_doc.tables) do%>
+<%for _, tab_name in ipairs(tabs) do%>
 <%=luadoc.doclet.html.include("table.lp", { doc=doc, module_doc=module_doc, tab=module_doc.tables[tab_name] })%>
 <%end%>
 </dl>

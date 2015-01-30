@@ -8,7 +8,7 @@ else
 end
 %>
 
-<dt><%=func.private and "local " or ""%><a name="<%=func.name%>"></a><strong><%=(oop and func.name:gsub("%.",":") or func.name:gsub(".+%.",""))%></strong>&nbsp;(<%=table.concat(func.param or {}, ", ")%>)</dt>
+<dt><%=func.private and "local " or ""%><a name="<%=func.name%>"></a><strong><%=func.printname%></strong>&nbsp;(<%=table.concat(func.param or {}, ", ")%>)</dt>
 <dd>
 <%=func.description or ""%>
 
@@ -59,6 +59,6 @@ end
 		<%=(oop and func.see[i]:gsub("%.",":") or func.see[i]:gsub(".+%.",""))%>
 	</a>
 	<%end%>
-</ul
+</ul>
 <%end%>
 </dd>

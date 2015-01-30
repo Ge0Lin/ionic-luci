@@ -32,7 +32,7 @@ hr { color:#cccccc }
 img { border-width: 0px; }
 
 
-h3 { padding-top: 1em; }
+h3 { padding: 1em 0 0.5em; }
 
 p { margin-left: 1em; }
 
@@ -81,9 +81,8 @@ table.index ul { padding-top: 0em; margin-top: 0em; }
 
 table {
     border: 1px solid black;
-	border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+    border-collapse: collapse;
+    margin: 1em auto;
 }
 th {
     border: 1px solid black;
@@ -275,8 +274,8 @@ table.table_list td.name { background-color: #f0f0f0; }
 table.table_list td.summary { width: 100%; }
 
 dl.function dt {border-top: 1px solid #ccc; padding-top: 1em;}
-dl.function dd {padding-bottom: 1em;}
-dl.function h3 {padding: 0; margin: 0; font-size: medium;}
+dl.function dd {padding: 0.5em 0;}
+dl.function h3 {margin: 0; font-size: medium;}
 
 dl.table dt {border-top: 1px solid #ccc; padding-top: 1em;}
 dl.table dd {padding-bottom: 1em;}

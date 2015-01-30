@@ -4,7 +4,12 @@
 -- @release $Id: luadoc.lua.in,v 1.1 2008/02/17 06:42:51 jasonsantos Exp $
 -------------------------------------------------------------------------------
 
-require "luadoc"
+--local source = debug.getinfo(1).source or ""
+--local mypath = source:match("@(.+)/[^/]+")
+
+--package.path = package.path .. ";" .. mypath .. "/?.lua;" .. mypath .. "/?/init.lua"
+
+require "luadoc.init"
 
 -------------------------------------------------------------------------------
 -- Print version number.

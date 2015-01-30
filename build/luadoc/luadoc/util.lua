@@ -29,8 +29,9 @@ end
 -- @see string.gsub
 
 function trim_comment (s)
-	s = string.gsub(s, "%-%-+(.*)$", "%1")
-	return trim(s)
+	s = string.gsub(s, "^%s*%-%-+%[%[(.*)$", "%1")
+	s = string.gsub(s, "^%s*%-%-+(.*)$", "%1")
+	return s
 end
 
 -------------------------------------------------------------------------------
@@ -58,8 +59,8 @@ end
 
 -------------------------------------------------------------------------------
 -- Split text into a list consisting of the strings in text,
--- separated by strings matching delim (which may be a pattern). 
--- @param delim if delim is "" then action is the same as %s+ except that 
+-- separated by strings matching delim (which may be a pattern).
+-- @param delim if delim is "" then action is the same as %s+ except that
 -- field 1 may be preceeded by leading whitespace
 -- @usage split(",%s*", "Anna, Bob, Charlie,Dolores")
 -- @usage split(""," x y") gives {"x","y"}
@@ -73,12 +74,12 @@ function split(delim, text)
 		delim = delim or ""
 		local pos = 1
 		-- if delim matches empty string then it would give an endless loop
-		if string.find("", delim, 1) and delim ~= "" then 
+		if string.find("", delim, 1) and delim ~= "" then
 			error("delim matches empty string!")
 		end
 		local first, last
 		while 1 do
-			if delim ~= "" then 
+			if delim ~= "" then
 				first, last = string.find(text, delim, pos)
 			else
 				first, last = string.find(text, "%s+", pos)
@@ -169,33 +170,32 @@ function loadlogengine(options)
 		require "logging"
 		require "logging.console"
 	end)
-	
+
 	local logging = logenabled and logging
-	
+
 	if logenabled then
 		if options.filelog then
 			logger = logging.file("luadoc.log") -- use this to get a file log
 		else
 			logger = logging.console("[%level] %message\n")
 		end
-	
+
 		if options.verbose then
 			logger:setLevel(logging.INFO)
 		else
 			logger:setLevel(logging.WARN)
 		end
-		
+
 	else
 		noop = {__index=function(...)
 			return function(...)
 				-- noop
 			end
 		end}
-		
-		logger = {} 
+
+		logger = {}
 		setmetatable(logger, noop)
 	end
-	
+
 	return logger
 end
-

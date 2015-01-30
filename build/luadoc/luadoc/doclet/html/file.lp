@@ -52,7 +52,7 @@
 <%for _, func_name in ipairs(file_doc.functions) do
   local func_data = file_doc.functions[func_name]%>
 	<tr>
-	<td class="name" nowrap><%=func_data.private and "local " or ""%><a href="#<%=func_name%>"><%=func_name%></a>&nbsp;(<%=table.concat(func_data.param, ", ")%>)</td>
+	<td class="name" nowrap><%=func_data.private and "local " or ""%><a href="#<%=func_name%>"><%=func_name%></a>&nbsp;(<%=table.concat(func_data.param or {}, ", ")%>)</td>
 	<td class="summary"><%=func_data.summary%></td>
 	</tr>
 <%end%>

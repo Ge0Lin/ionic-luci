@@ -242,7 +242,7 @@ local function parse_comment (block, first_line, modulename)
 			currenttag = tag
 			currenttext = text
 		else
-			currenttext = util.concat(currenttext, line)
+			currenttext = util.concat(currenttext, "\n" .. line)
 			assert(string.sub(currenttext, 1, 1) ~= " ", string.format("`%s', `%s'", currenttext, line))
 		end
 	end)
@@ -270,13 +270,15 @@ end
 -- @return modulename if found
 
 local function parse_block (f, line, modulename, first)
+	local multiline = not not (line and line:match("%[%["))
 	local block = {
 		comment = {},
 		code = {},
 	}
 
 	while line ~= nil do
-		if string.find(line, "^[\t ]*%-%-") == nil then
+		if (multiline == true and string.find(line, "%]%]") ~= nil) or
+		   (multiline == false and string.find(line, "^[\t ]*%-%-") == nil) then
 			-- reached end of comment, read the code below it
 			-- TODO: allow empty lines
 			line, block.code, modulename = parse_code(f, line, modulename)

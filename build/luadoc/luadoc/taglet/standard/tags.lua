@@ -7,7 +7,7 @@ local luadoc = require "luadoc"
 local util = require "luadoc.util"
 local string = require "string"
 local table = require "table"
-local assert, type, tostring = assert, type, tostring
+local assert, type, tostring, tonumber = assert, type, tostring, tonumber
 
 module "luadoc.taglet.standard.tags"
 
@@ -34,6 +34,12 @@ end
 
 local function cstyle (tag, block, text)
 	block[tag] = text
+end
+
+-------------------------------------------------------------------------------
+
+local function sort (tag, block, text)
+	block[tag] = tonumber(text) or 0
 end
 
 -------------------------------------------------------------------------------
@@ -164,6 +170,7 @@ handlers["param"] = param
 handlers["release"] = release
 handlers["return"] = ret
 handlers["see"] = see
+handlers["sort"] = sort
 handlers["usage"] = usage
 
 -------------------------------------------------------------------------------
@@ -173,6 +180,12 @@ function handle (tag, block, text)
 		luadoc.logger:error(string.format("undefined handler for tag `%s'", tag))
 		return
 	end
+
+	if text then
+		text = text:gsub("`([^\n]-)`", "<code>%1</code>")
+		text = text:gsub("`(.-)`", "<pre>%1</pre>")
+	end
+
 --	assert(handlers[tag], string.format("undefined handler for tag `%s'", tag))
 	return handlers[tag](tag, block, text)
 end
