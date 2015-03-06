@@ -6,7 +6,7 @@ module("luci.controller.modbusgw", package.seeall)
 
 function index() 
 
-	entry({"admin", "bt"}, firstchild(), "Bright Things", 3-).dependent=false
+	entry({"admin", "bt"}, firstchild(), "Bright Things", 30).dependent=false
 	entry({"admin", "bt", "modbusgw"}, cbi("modbusgw/index"), "Modbus Gateway", 1)
 
 end
