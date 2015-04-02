@@ -7,27 +7,6 @@
 local uci = require "luci.model.uci".cursor()
 local tpl = require "luci.template"
 local fs = require "nixio.fs"
-local ff = {}
-local ff = uci:get_all("freifunk")
-
-if not ff or not ff.community.name then
-	community = "Freifunk"
-	DefaultText = ""
-	nickname = "No Nickname set"
-else
-	community = ff.community.name
-	DefaultText = ff.community.DefaultText
-	nickname = ff.contact.nickname
-end
-
-local co = "profile_" .. community
---local community = uci:get_first(co, "community", "name") or "Freifunk"
-local url = uci:get_first(co, "community", "homepage") or "http://www.freifunk.net"
-
-
-local usertext = fs.readfile("/www/luci-static/index_user.html")
-
-if DefaultText ~= "disabled" then
 
 	defaulttext = '<h2><a id="content" name="content">'..
 	(translate("Hello and welcome in the network of"))..
@@ -54,29 +33,9 @@ if DefaultText ~= "disabled" then
 	'</strong>: '..
 	translate("Internet access depends on technical and organisational conditions and may or may not work for you.")..
 	'</p>'
-end
 %>
 
 <%=defaulttext%>
 <%=usertext%>
 
-<%
--- add custom widgets from view/freifunk/widgets
-local widgets = {}
-local dir = "/usr/lib/lua/luci/view/freifunk/widgets"
-
-uci:foreach("freifunk-widgets", "widget",
-			function(s)
-				if s.enabled == "1" then
-					table.insert(widgets, s)
-				end
-			end)
-
-for k, v in ipairs(widgets) do
-	if v['template'] and fs.access(dir .. "/" .. v['template'] .. "/main.htm") then
-		tpl.render("freifunk/widgets/" .. v['template'] .. "/main", { data = v })
-	end
-end
-
-%>
 <%+footer%>
