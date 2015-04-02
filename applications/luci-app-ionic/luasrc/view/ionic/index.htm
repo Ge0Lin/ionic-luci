@@ -9,30 +9,7 @@ local tpl = require "luci.template"
 local fs = require "nixio.fs"
 
 	defaulttext = '<h2><a id="content" name="content">'..
-	(translate("Hello and welcome in the network of"))..
-	' '..
-	(community or "Freifunk Deutschland")..
-	'!</a></h2><p>'..
-	translate("We are an initiative to establish a free, independent and open wireless mesh network.")..
-	'<br />'..
-	translate("This is the access point")..
-	' '..
-	luci.sys.hostname()..
-	'. '..
-	translate("It is operated by")..
-	' <a href="'..
-	luci.dispatcher.build_url("freifunk", "contact")..
-	'">'..
-	(nickname or translate("Please set your contact information"))..
-	'</a>.</p><p>'..
-	translate("You can find further information about the global Freifunk initiative at")..
-	' <a href="http://freifunk.net">Freifunk.net</a>.<br />'..
-	translate("If you are interested in our project then contact the local community")..
-	' <a href="'..url..'">'..community..'</a>.</p><p><strong>'..
-	translate("Notice")..
-	'</strong>: '..
-	translate("Internet access depends on technical and organisational conditions and may or may not work for you.")..
-	'</p>'
+	(translate("Hello and welcome to Ionic"))
 %>
 
 <%=defaulttext%>
