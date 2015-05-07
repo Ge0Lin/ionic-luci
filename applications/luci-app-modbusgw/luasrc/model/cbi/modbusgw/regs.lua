@@ -44,6 +44,8 @@ type:value("signed16", translate("Signed-16"))
 type:value("unsigned16", translate("Unsigned-16"))
 type:value("string", translate("String"))
 address = registers:option(Value, "address", translate("Address"))
+address.size = 3
+description = registers:option(Value, "description", translate("Description"))
 
 return m
 
