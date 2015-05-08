@@ -1,5 +1,7 @@
 --
--- Copyright 2015 Bright Things UN Ltd. <lth@bright-things.com>
+-- Copyright 2015 Bright Things UN Ltd. 
+-- 
+-- Maintainer: Lars Boegild Thomsen <lth@bright-things.com>
 --
 
 local ds = require "luci.dispatcher"

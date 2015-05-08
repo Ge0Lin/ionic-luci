@@ -1,5 +1,7 @@
 --
--- Copyright 2015 Bright Things UN Ltd. <lth@bright-things.com>
+-- Copyright 2015 Bright Things UN Ltd.
+--
+-- Maintainer: Lars Boegild Thomsen <lth@bright-things.com>
 --
 
 local ds = require "luci.dispatcher"
@@ -17,6 +19,7 @@ ports.sortable = false
 portname = ports:option(Value, "name", translate("Name"))
 portdev = ports:option(ListValue, "serialport", translate("Serial Port"))
 portdev:value("/dev/ttyUSB0", "/dev/ttyUSB0")
+portdev:value("/dev/ttyUSB1", "/dev/ttyUSB1")
 portspeed = ports:option(ListValue, "bitrate", translate("Serial Speed"))
 portspeed:value("115200", "115200")
 portspeed:value("57600", "57600")
@@ -43,6 +46,7 @@ devices.sortable = false
 devicename = devices:option(Value, "name", translate("Name"))
 devicename.size=10
 devicedescription = devices:option(Value, "description", translate("Description"))
+deviceport = devices:option(Value, "port", translate("Port"))
 deviceaddress = devices:option(Value, "address", translate("Address"))
 deviceaddress.size = 3
 devicepriority = devices:option(Value, "priority", translate("Priority"))
