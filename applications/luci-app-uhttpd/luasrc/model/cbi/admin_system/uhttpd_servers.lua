@@ -9,6 +9,9 @@ local ds = require "luci.dispatcher"
 m = Map("uhttpd", translate("Web Server - Server Process"), 
 	translate("Edit the Web Server Process on this page."))
 
+m.redirect = luci.dispatcher.build_url("admin/system/uhttpd")
+
+
 server = m:section(NamedSection, arg[1], "uhttpd", translate("Process Settings"))
 
 server_home = server:option(Value, "home", translate("Home"))
