@@ -2,6 +2,7 @@
  Copyright 2008 Steven Barth <steven@midlink.org>
  Copyright 2008 Jo-Philipp Wich <jow@openwrt.org>
  Copyright 2012 David Menting <david@nut-bolt.nl>
+ Copyright 2015 Lars Boegild Thomsen <lth@bright-things.com>
  Licensed to the public under the Apache License 2.0.
 -%>
 
@@ -14,7 +15,7 @@
 	local categories = disp.node_childs(tree)
 %>
    <footer>
-    Powered by <a href="http://bright-things.com/ionic/">Ionic</a> / <%= ver.distversion %>
+    Powered by <a href="http://bright-things.com/">Bright Things</a> <a href="https://ionic-os.com">Ionic</a> / <%= ver.distversion %>
     <% if #categories > 1 then %>
      <ul class="breadcrumb pull-right" id="modemenu">
 	    <% for i, r in ipairs(categories) do %>
@@ -27,4 +28,3 @@
   </div>
  </body>
 </html>
-
