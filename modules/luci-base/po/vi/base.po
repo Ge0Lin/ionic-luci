@@ -263,6 +263,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr ""
 
@@ -298,6 +304,9 @@ msgstr ""
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr ""
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -317,6 +326,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -444,6 +468,9 @@ msgstr "Kênh"
 msgid "Check"
 msgstr ""
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Checksum"
 
@@ -460,6 +487,9 @@ msgid ""
 msgstr ""
 
 msgid "Cipher"
+msgstr ""
+
+msgid "Cisco UDP encapsulation"
 msgstr ""
 
 msgid ""
@@ -605,6 +635,9 @@ msgstr ""
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -637,9 +670,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Xóa"
-
-msgid "Delete this interface"
-msgstr ""
 
 msgid "Delete this network"
 msgstr ""
@@ -683,6 +713,9 @@ msgid ""
 msgstr ""
 
 msgid "Disable DNS setup"
+msgstr ""
+
+msgid "Disable Encryption"
 msgstr ""
 
 msgid "Disable HW-Beacon timer"
@@ -808,10 +841,16 @@ msgstr "Kích hoạt <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr ""
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr ""
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
 msgid "Enable NTP client"
+msgstr ""
+
+msgid "Enable Single DES"
 msgstr ""
 
 msgid "Enable TFTP server"
@@ -884,6 +923,9 @@ msgstr ""
 msgid "External system log server port"
 msgstr ""
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Khung nhanh"
 
@@ -904,6 +946,11 @@ msgstr "Filter private"
 
 msgid "Filter useless"
 msgstr "Lọc không hữu dụng"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr ""
@@ -928,9 +975,6 @@ msgstr ""
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr ""
-
-msgid "Flags"
-msgstr "Cờ"
 
 msgid "Flash Firmware"
 msgstr "Phần cứng flash"
@@ -960,6 +1004,9 @@ msgid "Force TKIP"
 msgstr ""
 
 msgid "Force TKIP and CCMP (AES)"
+msgstr ""
+
+msgid "Force use of NAT-T"
 msgstr ""
 
 msgid "Form token mismatch"
@@ -1007,6 +1054,9 @@ msgstr ""
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1014,6 +1064,9 @@ msgid "Generic 802.11%s Wireless Controller"
 msgstr ""
 
 msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+
+msgid "Global Settings"
 msgstr ""
 
 msgid "Global network options"
@@ -1024,6 +1077,9 @@ msgstr ""
 
 msgid "Go to relevant configuration page"
 msgstr "Đi tới trang cấu hình thích hợp"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1080,6 +1136,9 @@ msgid "Hostnames"
 msgstr "Tên host"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1183,6 +1242,12 @@ msgstr ""
 
 msgid "Identity"
 msgstr "Nhận dạng"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1413,6 +1478,9 @@ msgid ""
 "requests to"
 msgstr ""
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr ""
 
@@ -1432,6 +1500,9 @@ msgid "Load Average"
 msgstr ""
 
 msgid "Loading"
+msgstr ""
+
+msgid "Local IP address to assign"
 msgstr ""
 
 msgid "Local IPv4 address"
@@ -1539,6 +1610,11 @@ msgstr ""
 msgid "Maximum hold time"
 msgstr "Mức cao nhất"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr ""
 
@@ -1606,10 +1682,16 @@ msgstr ""
 "Số điểm lắp xác định tại một điểm mà ở đó bộ nhớ sẽ được gắn vào hệ thống "
 "tập tin"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr ""
 
 msgid "Mount point"
+msgstr ""
+
+msgid "Mount swap not specifically configured"
 msgstr ""
 
 msgid "Mounted file systems"
@@ -1630,10 +1712,16 @@ msgstr ""
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1673,6 +1761,9 @@ msgid "Next »"
 msgstr ""
 
 msgid "No DHCP Server configured for this interface"
+msgstr ""
+
+msgid "No NAT-T"
 msgstr ""
 
 msgid "No chains in this table"
@@ -1732,6 +1823,9 @@ msgstr ""
 msgid "Note: Configuration files will be erased."
 msgstr ""
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr ""
 
@@ -1743,6 +1837,12 @@ msgstr "OK "
 
 msgid "OPKG-Configuration"
 msgstr "Cấu hình OPKG-"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr ""
@@ -1860,6 +1960,9 @@ msgstr ""
 msgid "PPPoE"
 msgstr ""
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr ""
 
@@ -1909,6 +2012,12 @@ msgid "Path to executable which handles the button event"
 msgstr ""
 
 msgid "Peak:"
+msgstr ""
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
 msgstr ""
 
 msgid "Perform reboot"
@@ -1992,6 +2101,9 @@ msgid "Public prefix routed to this device for distribution to clients."
 msgstr ""
 
 msgid "Quality"
+msgstr ""
+
+msgid "RFC3947 NAT-T mode"
 msgstr ""
 
 msgid "RTS/CTS Threshold"
@@ -2199,9 +2311,6 @@ msgstr ""
 "Routes chỉ định trên giao diện và cổng một host nhất định hay network được "
 "tiếp cận."
 
-msgid "Rule #"
-msgstr ""
-
 msgid "Run a filesystem check before mounting the device"
 msgstr ""
 
@@ -2217,6 +2326,15 @@ msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
 msgid "SSH Access"
+msgstr ""
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
 msgstr ""
 
 msgid "SSH-Keys"
@@ -2472,6 +2590,9 @@ msgstr "Bảng"
 
 msgid "Target"
 msgstr "Đích"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Terminate"
@@ -2783,6 +2904,9 @@ msgstr ""
 msgid "Unmanaged"
 msgstr ""
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Thay đổi không lưu"
 
@@ -2883,6 +3007,12 @@ msgstr ""
 msgid "VLANs on %q (%s)"
 msgstr ""
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr ""
 
@@ -2890,6 +3020,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3177,6 +3313,9 @@ msgstr ""
 
 msgid "« Back"
 msgstr ""
+
+#~ msgid "Flags"
+#~ msgstr "Cờ"
 
 #~ msgid "Path"
 #~ msgstr "Đường dẫn"

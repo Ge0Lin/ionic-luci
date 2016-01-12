@@ -271,6 +271,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Antena 1"
 
@@ -306,6 +312,9 @@ msgstr "Statiile asociate"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Atheros 802.11%s Controler Fara Fir"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -325,6 +334,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -452,6 +476,9 @@ msgstr "Canal"
 msgid "Check"
 msgstr "Verificare"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Suma de verificare"
 
@@ -471,6 +498,9 @@ msgid ""
 msgstr ""
 
 msgid "Cipher"
+msgstr ""
+
+msgid "Cisco UDP encapsulation"
 msgstr ""
 
 msgid ""
@@ -614,6 +644,9 @@ msgstr ""
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -646,9 +679,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Sterge"
-
-msgid "Delete this interface"
-msgstr "Sterge aceasta interfata"
 
 msgid "Delete this network"
 msgstr "Sterge aceasta retea"
@@ -695,6 +725,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "Dezactiveaza configuratia DNS"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr ""
@@ -810,10 +843,16 @@ msgstr "Activeaza <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr ""
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr ""
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
 msgid "Enable NTP client"
+msgstr ""
+
+msgid "Enable Single DES"
 msgstr ""
 
 msgid "Enable TFTP server"
@@ -886,6 +925,9 @@ msgstr "Server de log-uri extern"
 msgid "External system log server port"
 msgstr "Portul serverului de log-uri extern"
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr ""
 
@@ -906,6 +948,11 @@ msgstr "Filtreaza privatele"
 
 msgid "Filter useless"
 msgstr "Filtreaza nefolositele"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Gaseste si alatura in retea"
@@ -930,9 +977,6 @@ msgstr "Versiunea de firmware"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr "Portul sursa pentru intrebarile DNS catre exterior"
-
-msgid "Flags"
-msgstr ""
 
 msgid "Flash Firmware"
 msgstr "Rescrie firmware"
@@ -964,6 +1008,9 @@ msgstr "Forteaza TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Forteaza TKIP si CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1010,6 +1057,9 @@ msgstr "Configurare generala"
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1019,6 +1069,9 @@ msgstr ""
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "Confirmarea parolei nu se potriveste cu prima, parola neschimbata !"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1026,6 +1079,9 @@ msgid "Go to password configuration..."
 msgstr ""
 
 msgid "Go to relevant configuration page"
+msgstr ""
+
+msgid "Group Password"
 msgstr ""
 
 msgid "Guest"
@@ -1083,6 +1139,9 @@ msgid "Hostnames"
 msgstr "Nume de host"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1186,6 +1245,12 @@ msgstr ""
 
 msgid "Identity"
 msgstr "Identitate"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1411,6 +1476,9 @@ msgid ""
 "requests to"
 msgstr ""
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr ""
 
@@ -1431,6 +1499,9 @@ msgstr "Incarcarea medie"
 
 msgid "Loading"
 msgstr "Incarcare"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Adresa IPv4 locala"
@@ -1537,6 +1608,11 @@ msgstr ""
 msgid "Maximum hold time"
 msgstr ""
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr ""
 
@@ -1602,10 +1678,16 @@ msgid ""
 "filesystem"
 msgstr ""
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr ""
 
 msgid "Mount point"
+msgstr ""
+
+msgid "Mount swap not specifically configured"
 msgstr ""
 
 msgid "Mounted file systems"
@@ -1626,10 +1708,16 @@ msgstr ""
 msgid "NAS ID"
 msgstr ""
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1670,6 +1758,9 @@ msgstr "Mai departe »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "Nici un server DHCP configurat pentru aceasta interfata"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr ""
@@ -1728,6 +1819,9 @@ msgstr "Nu este conectat"
 msgid "Note: Configuration files will be erased."
 msgstr "Nota: fisierele de configurare vor fi sterse."
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Notificare"
 
@@ -1739,6 +1833,12 @@ msgstr "OK"
 
 msgid "OPKG-Configuration"
 msgstr "Configuratia-OPKG"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr ""
@@ -1850,6 +1950,9 @@ msgstr ""
 msgid "PPPoE"
 msgstr ""
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr ""
 
@@ -1900,6 +2003,12 @@ msgstr "Calea catre executabilul care se ocupa de evenimentul butonului"
 
 msgid "Peak:"
 msgstr "Maxim:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "Restarteaza"
@@ -1983,6 +2092,9 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Calitate"
+
+msgid "RFC3947 NAT-T mode"
+msgstr ""
 
 msgid "RTS/CTS Threshold"
 msgstr ""
@@ -2187,9 +2299,6 @@ msgid ""
 "can be reached."
 msgstr ""
 
-msgid "Rule #"
-msgstr "Regula #"
-
 msgid "Run a filesystem check before mounting the device"
 msgstr ""
 
@@ -2206,6 +2315,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "Acces SSH"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "Cheile SSH"
@@ -2461,6 +2579,9 @@ msgstr "Tabel"
 
 msgid "Target"
 msgstr "Tinta"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Termina"
@@ -2759,6 +2880,9 @@ msgstr "Eroare necunoscuta, parola neschimbata !"
 msgid "Unmanaged"
 msgstr "Neadministrate"
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Modificari nesalvate"
 
@@ -2859,6 +2983,12 @@ msgstr "VLANuri pe %q"
 msgid "VLANs on %q (%s)"
 msgstr ""
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr ""
 
@@ -2866,6 +2996,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3148,6 +3284,12 @@ msgstr "da"
 
 msgid "« Back"
 msgstr "« Inapoi"
+
+#~ msgid "Delete this interface"
+#~ msgstr "Sterge aceasta interfata"
+
+#~ msgid "Rule #"
+#~ msgstr "Regula #"
 
 #~ msgid "Please wait: Device rebooting..."
 #~ msgstr "Asteapta: dispozitivul se restarteaza.."

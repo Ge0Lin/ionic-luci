@@ -275,6 +275,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Anténa 1"
 
@@ -310,6 +316,9 @@ msgstr "Připojení klienti"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Atheros 802.11%s bezdrátový ovladač"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -329,6 +338,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -459,6 +483,9 @@ msgstr "Kanál"
 msgid "Check"
 msgstr "Kontrola"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Kontrolní součet"
 
@@ -482,6 +509,9 @@ msgstr ""
 
 msgid "Cipher"
 msgstr "Šifra"
+
+msgid "Cisco UDP encapsulation"
+msgstr ""
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -631,6 +661,9 @@ msgstr "Přeposílání DNS"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -665,9 +698,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Odstranit"
-
-msgid "Delete this interface"
-msgstr "Odstranit toto rozhraní"
 
 msgid "Delete this network"
 msgstr "Odstranit tuto síť"
@@ -714,6 +744,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "Zakázat nastavení DNS"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr "Zakázat HW-Beacon časovač"
@@ -842,11 +875,17 @@ msgstr "Povolit <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr "Povolit dynamickou aktualizaci koncového bodu HE.net"
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Na PPP spoji povolit vyjednání IPv6"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Povolit průchod jumbo rámců"
 
 msgid "Enable NTP client"
 msgstr "Povolit NTP klienta"
+
+msgid "Enable Single DES"
+msgstr ""
 
 msgid "Enable TFTP server"
 msgstr "Povolit TFTP server"
@@ -920,6 +959,9 @@ msgstr "Externí protokolovací server"
 msgid "External system log server port"
 msgstr "Port externího protokolovacího serveru"
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Rychlé rámce"
 
@@ -940,6 +982,11 @@ msgstr "Filtrovat soukromé"
 
 msgid "Filter useless"
 msgstr "Filtrovat nepotřebné"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Vyhledat a připojit síť"
@@ -964,9 +1011,6 @@ msgstr "Verze firmwaru"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr "Pevný zdrojový port pro odchozí DNS dotazy"
-
-msgid "Flags"
-msgstr "Příznaky"
 
 msgid "Flash Firmware"
 msgstr "Nahrát firmware"
@@ -997,6 +1041,9 @@ msgstr "Vynutit TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Vynutit TKIP a CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1043,6 +1090,9 @@ msgstr "Obecné nastavení"
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Vytvorǐt archív"
 
@@ -1052,6 +1102,9 @@ msgstr "Generic 802.11%s Wireless Controller"
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "Heslo nezměněno z důvodu nesouhlasu nového hesla a ověření hesla!"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1060,6 +1113,9 @@ msgstr "Přejít na nastavení hesla..."
 
 msgid "Go to relevant configuration page"
 msgstr "Přejít na související konfigurační stránku"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1118,6 +1174,9 @@ msgid "Hostnames"
 msgstr "Jména hostitelů"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1221,6 +1280,12 @@ msgstr "IPv6-over-IPv4 (6to4)"
 
 msgid "Identity"
 msgstr "Identita"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1456,6 +1521,9 @@ msgstr ""
 "Seznam <abbr title=\"Domain Name System\">DNS</abbr> serverů, na které "
 "přeposílat požadavky"
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr "Seznam domén, pro které povolit odpovědi podle RFC1918"
 
@@ -1477,6 +1545,9 @@ msgstr "Zátěž průměrná"
 
 msgid "Loading"
 msgstr "Načítání"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Místní IPv4 adresa"
@@ -1589,6 +1660,11 @@ msgstr "Nejvyšší počet sekund čekání, než bude modem připraven"
 msgid "Maximum hold time"
 msgstr "Maximální doba držení"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr "Maximální počet zapůjčených adres."
 
@@ -1656,11 +1732,17 @@ msgstr ""
 "Přípojný bod určuje místo v souborovém systému, na kterém bude připojeno "
 "paměťové zařízení"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "Volby připojení"
 
 msgid "Mount point"
 msgstr "Přípojný bod"
+
+msgid "Mount swap not specifically configured"
+msgstr ""
 
 msgid "Mounted file systems"
 msgstr "Připojené souborové systémy"
@@ -1680,10 +1762,16 @@ msgstr "Adresa vícesměrového vysílání"
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1724,6 +1812,9 @@ msgstr "Další »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "Pro toto rozhraní není nastaven žádný DHCP server"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr "Žádné řetězce v této tabulce"
@@ -1782,6 +1873,9 @@ msgstr "Nepřipojeno"
 msgid "Note: Configuration files will be erased."
 msgstr "Pozn: Konfigurační soubory budou vymazány."
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Oznámení"
 
@@ -1793,6 +1887,12 @@ msgstr "OK"
 
 msgid "OPKG-Configuration"
 msgstr "Konfigurace balíčků OPKG"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr "Vypnutí prodlevy"
@@ -1911,6 +2011,9 @@ msgstr "PPPoATM"
 msgid "PPPoE"
 msgstr "PPPoE"
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr "PPtP"
 
@@ -1961,6 +2064,12 @@ msgstr "Cesta ke spustitelnému souboru, který obsluhuje událost tlačítka"
 
 msgid "Peak:"
 msgstr "Špička:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "Provést restart"
@@ -2046,6 +2155,9 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Kvalita"
+
+msgid "RFC3947 NAT-T mode"
+msgstr ""
 
 msgid "RTS/CTS Threshold"
 msgstr "Práh RTS/CTS"
@@ -2265,9 +2377,6 @@ msgid ""
 msgstr ""
 "Trasy určují, přes jaké rozhraní a bránu může být konkrétního hosta dosaženo."
 
-msgid "Rule #"
-msgstr "Pravidlo #"
-
 msgid "Run a filesystem check before mounting the device"
 msgstr "Spustit kontrolu souborového systému před připojením zařízení"
 
@@ -2284,6 +2393,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "Přístup přes SSH"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "SSH klíče"
@@ -2550,6 +2668,9 @@ msgstr ""
 
 msgid "Target"
 msgstr "Cíl"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Ukončit"
@@ -2894,6 +3015,9 @@ msgstr "Neznámá chyba, heslo nebylo změněno!"
 msgid "Unmanaged"
 msgstr "Nespravovaný"
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Neuložené změny"
 
@@ -3000,6 +3124,12 @@ msgstr "VLANy na %q"
 msgid "VLANs on %q (%s)"
 msgstr "VLANy na %q (%s)"
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "VPN server"
 
@@ -3007,6 +3137,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3296,8 +3432,14 @@ msgstr "ano"
 msgid "« Back"
 msgstr "« Zpět"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "Na PPP spoji povolit vyjednání IPv6"
+#~ msgid "Delete this interface"
+#~ msgstr "Odstranit toto rozhraní"
+
+#~ msgid "Flags"
+#~ msgstr "Příznaky"
+
+#~ msgid "Rule #"
+#~ msgstr "Pravidlo #"
 
 #~ msgid "Ignore Hosts files"
 #~ msgstr "Ignorovat soubory Hosts"

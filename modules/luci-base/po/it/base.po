@@ -285,6 +285,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Antenna 1"
 
@@ -320,6 +326,9 @@ msgstr "Dispositivi Wi-Fi connessi"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Dispositivo Wireless Atheros 802.11%s"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -339,6 +348,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -469,6 +493,9 @@ msgstr "Canale"
 msgid "Check"
 msgstr "Verifica"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Checksum"
 
@@ -492,6 +519,9 @@ msgstr ""
 
 msgid "Cipher"
 msgstr "Cifratura"
+
+msgid "Cisco UDP encapsulation"
+msgstr ""
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -641,6 +671,9 @@ msgstr "Inoltri DNS"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -676,9 +709,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Elimina"
-
-msgid "Delete this interface"
-msgstr "Rimuovi questa interfaccia"
 
 msgid "Delete this network"
 msgstr "Rimuovi questa rete"
@@ -725,6 +755,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "Disabilita il setup dei DNS"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr "Disabilita Timer Beacon HW"
@@ -852,11 +885,17 @@ msgstr "Abilita <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr "Abilitazione aggiornamento endpoint dinamico HE.net"
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Attiva la negoziazione IPv6 sul collegamento PPP"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Abilita Jumbo Frame passthrough"
 
 msgid "Enable NTP client"
 msgstr "Attiva il client NTP"
+
+msgid "Enable Single DES"
+msgstr ""
 
 msgid "Enable TFTP server"
 msgstr "Abilita il server TFTP"
@@ -930,6 +969,9 @@ msgstr "Server Log di Sistema esterno"
 msgid "External system log server port"
 msgstr "Porta Server Log di Sistema esterno"
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Frame veloci"
 
@@ -950,6 +992,11 @@ msgstr "Filtra privati"
 
 msgid "Filter useless"
 msgstr "Filtra inutili"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Trova e aggiungi una rete"
@@ -974,9 +1021,6 @@ msgstr "Versione del Firmware"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr "Porta di origine fissa per le richieste DNS in uscita"
-
-msgid "Flags"
-msgstr "Flags"
 
 msgid "Flash Firmware"
 msgstr "Flash Firmware"
@@ -1007,6 +1051,9 @@ msgstr "Forza TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Forza TKIP e CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1053,6 +1100,9 @@ msgstr "Impostazioni Generali"
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Genera Archivio"
 
@@ -1064,6 +1114,9 @@ msgstr ""
 "La conferma della password assegnata non ha prodotto risultati, la password "
 "non è stata cambiata!"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1072,6 +1125,9 @@ msgstr "Vai alla configurazione della password..."
 
 msgid "Go to relevant configuration page"
 msgstr "Vai alla pagina di configurazione relativa"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1131,6 +1187,9 @@ msgid "Hostnames"
 msgstr "Hostname"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1234,6 +1293,12 @@ msgstr "IPv6-su-IPv4 (6to4)"
 
 msgid "Identity"
 msgstr "Identità PEAP"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1472,6 +1537,9 @@ msgstr ""
 "Elenco di Server <abbr title=\"Sistema Nome Dimio\">DNS</abbr>a cui "
 "inoltrare le richieste in"
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr "Elenco di domini da consentire le risposte RFC1918 per"
 
@@ -1492,6 +1560,9 @@ msgstr "Carico Medio"
 
 msgid "Loading"
 msgstr "Caricamento"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Indirizzo IPv4 locale"
@@ -1604,6 +1675,11 @@ msgstr ""
 msgid "Maximum hold time"
 msgstr "Velocità massima"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr ""
 
@@ -1671,11 +1747,17 @@ msgstr ""
 "I punti di mount definiscono in quale punto un dispositivo di memoria verrà "
 "attaccato al tuo filesystem"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "Opzioni di mount"
 
 msgid "Mount point"
 msgstr "Punto di mount"
+
+msgid "Mount swap not specifically configured"
+msgstr ""
 
 msgid "Mounted file systems"
 msgstr "File system montati"
@@ -1695,10 +1777,16 @@ msgstr ""
 msgid "NAS ID"
 msgstr "ID della NAS"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1738,6 +1826,9 @@ msgid "Next »"
 msgstr "Prossimo »"
 
 msgid "No DHCP Server configured for this interface"
+msgstr ""
+
+msgid "No NAT-T"
 msgstr ""
 
 msgid "No chains in this table"
@@ -1797,6 +1888,9 @@ msgstr ""
 msgid "Note: Configuration files will be erased."
 msgstr ""
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Avviso"
 
@@ -1808,6 +1902,12 @@ msgstr "OK"
 
 msgid "OPKG-Configuration"
 msgstr "Configurazione di OPKG"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr ""
@@ -1924,6 +2024,9 @@ msgstr ""
 msgid "PPPoE"
 msgstr ""
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr ""
 
@@ -1974,6 +2077,12 @@ msgstr ""
 
 msgid "Peak:"
 msgstr "Picco:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "Esegui un riavvio"
@@ -2056,6 +2165,9 @@ msgid "Public prefix routed to this device for distribution to clients."
 msgstr ""
 
 msgid "Quality"
+msgstr ""
+
+msgid "RFC3947 NAT-T mode"
 msgstr ""
 
 msgid "RTS/CTS Threshold"
@@ -2266,9 +2378,6 @@ msgstr ""
 "Le route specificano attraverso quale interfaccia e gateway un certo host o "
 "rete può essere raggiunto."
 
-msgid "Rule #"
-msgstr ""
-
 msgid "Run a filesystem check before mounting the device"
 msgstr ""
 
@@ -2284,6 +2393,15 @@ msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
 msgid "SSH Access"
+msgstr ""
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
 msgstr ""
 
 msgid "SSH-Keys"
@@ -2552,6 +2670,9 @@ msgstr "Tabella"
 
 msgid "Target"
 msgstr "Destinazione"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Termina"
@@ -2876,6 +2997,9 @@ msgstr ""
 msgid "Unmanaged"
 msgstr ""
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Modifiche non salvate"
 
@@ -2984,6 +3108,12 @@ msgstr "VLANs su %q"
 msgid "VLANs on %q (%s)"
 msgstr "VLANs su %q (%s)"
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "Server VPN"
 
@@ -2991,6 +3121,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3284,8 +3420,11 @@ msgstr "Sì"
 msgid "« Back"
 msgstr "« Indietro"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "Attiva la negoziazione IPv6 sul collegamento PPP"
+#~ msgid "Delete this interface"
+#~ msgstr "Rimuovi questa interfaccia"
+
+#~ msgid "Flags"
+#~ msgstr "Flags"
 
 #~ msgid "Ignore Hosts files"
 #~ msgstr "Ignora i files Hosts"

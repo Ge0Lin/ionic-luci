@@ -272,6 +272,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "アンテナ 1"
 
@@ -307,6 +313,9 @@ msgstr "認証済み端末"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Atheros 802.11%s 無線LANコントローラ"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -326,6 +335,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -456,6 +480,9 @@ msgstr "チャネル"
 msgid "Check"
 msgstr "チェック"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "チェックサム"
 
@@ -479,6 +506,9 @@ msgstr ""
 
 msgid "Cipher"
 msgstr "暗号化方式"
+
+msgid "Cisco UDP encapsulation"
+msgstr ""
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -629,6 +659,9 @@ msgstr "DNSフォワーディング"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -663,9 +696,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "削除"
-
-msgid "Delete this interface"
-msgstr "インターフェースを削除します"
 
 msgid "Delete this network"
 msgstr "ネットワークを削除します"
@@ -712,6 +742,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "DNSセットアップを無効にする"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr "HWビーコンタイマーを無効にする"
@@ -840,11 +873,17 @@ msgstr "<abbr title=\"Spanning Tree Protocol\">STP</abbr>を有効にする"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr "HE.netの動的endpoint更新を有効にします"
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "PPPリンクのIPv6ネゴシエーションを有効にする"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "ジャンボフレーム・パススルーを有効にする"
 
 msgid "Enable NTP client"
 msgstr "NTPクライアント機能を有効にする"
+
+msgid "Enable Single DES"
+msgstr ""
 
 msgid "Enable TFTP server"
 msgstr "TFTPサーバーを有効にする"
@@ -919,6 +958,9 @@ msgstr "外部システムログ・サーバー"
 msgid "External system log server port"
 msgstr "外部システムログ・サーバーポート"
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "ファスト・フレーム"
 
@@ -939,6 +981,11 @@ msgstr "プライベートフィルター"
 
 msgid "Filter useless"
 msgstr "Filter useless"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "ネットワークを検索して参加"
@@ -963,9 +1010,6 @@ msgstr "ファームウェア・バージョン"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr "DNSクエリを送信する送信元ポートを固定します"
-
-msgid "Flags"
-msgstr "フラグ"
 
 msgid "Flash Firmware"
 msgstr "ファームウェアの更新"
@@ -997,6 +1041,9 @@ msgstr "TKIP を使用"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "TKIP 及びCCMP (AES) を使用"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1043,6 +1090,9 @@ msgstr "一般設定"
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "バックアップアーカイブの作成"
 
@@ -1052,6 +1102,9 @@ msgstr "802.11%s 無線LANコントローラ"
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "入力されたパスワードが一致しません。パスワードは変更されませんでした!"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1060,6 +1113,9 @@ msgstr "パスワード設定へ移動..."
 
 msgid "Go to relevant configuration page"
 msgstr "関連する設定ページへ移動"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1116,6 +1172,9 @@ msgid "Hostnames"
 msgstr "ホスト名"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1219,6 +1278,12 @@ msgstr "IPv6-over-IPv4 (6to4)"
 
 msgid "Identity"
 msgstr "識別子"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1453,6 +1518,9 @@ msgstr ""
 "問い合わせを転送する<abbr title=\"Domain Name System\">DNS</abbr> サーバーの"
 "リストを設定します"
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr "RFC1918の応答を許可するリスト"
 
@@ -1475,6 +1543,9 @@ msgstr "システム平均負荷"
 
 msgid "Loading"
 msgstr "ロード中"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "ローカル IPv4 アドレス"
@@ -1582,6 +1653,11 @@ msgstr "モデムが準備完了状態になるまでの最大待ち時間"
 msgid "Maximum hold time"
 msgstr "最大保持時間"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr "リースするアドレスの最大数です"
 
@@ -1649,11 +1725,17 @@ msgstr ""
 "マウントポイントは、記憶デバイスがファイルシステムのどこに接続されているかを"
 "表示しています。"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "マウントオプション"
 
 msgid "Mount point"
 msgstr "マウントポイント"
+
+msgid "Mount swap not specifically configured"
+msgstr ""
 
 msgid "Mounted file systems"
 msgstr "マウント中のファイルシステム"
@@ -1673,10 +1755,16 @@ msgstr "マルチキャストアドレス"
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1717,6 +1805,9 @@ msgstr "次 »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "このインターフェースにはDHCPサーバーが設定されていません"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr "チェイン内にルールがありません"
@@ -1775,6 +1866,9 @@ msgstr "未接続"
 msgid "Note: Configuration files will be erased."
 msgstr "注意: 設定ファイルは消去されます。"
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "注意"
 
@@ -1786,6 +1880,12 @@ msgstr "OK"
 
 msgid "OPKG-Configuration"
 msgstr "OPKG-設定"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr "消灯時間"
@@ -1905,6 +2005,9 @@ msgstr "PPPoATM"
 msgid "PPPoE"
 msgstr "PPPoE"
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr "PPtP"
 
@@ -1955,6 +2058,12 @@ msgstr "ボタンイベントをハンドルする実行ファイルのパス"
 
 msgid "Peak:"
 msgstr "ピーク:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "再起動を実行"
@@ -2040,6 +2149,9 @@ msgstr ""
 
 msgid "Quality"
 msgstr "クオリティ"
+
+msgid "RFC3947 NAT-T mode"
+msgstr ""
 
 msgid "RTS/CTS Threshold"
 msgstr "RTS/CTS閾値"
@@ -2261,9 +2373,6 @@ msgstr ""
 "特定のホスト又はネットワークに、どのインターフェース及びゲートウェイを通して"
 "通信を行うか、経路情報を設定します。"
 
-msgid "Rule #"
-msgstr "ルール #"
-
 msgid "Run a filesystem check before mounting the device"
 msgstr "デバイスのマウントを行う前にファイルシステムチェックを行う"
 
@@ -2280,6 +2389,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "SSHアクセス"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "SSHキー"
@@ -2544,6 +2662,9 @@ msgstr "テーブル"
 
 msgid "Target"
 msgstr "ターゲット"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "停止"
@@ -2888,6 +3009,9 @@ msgstr "不明なエラーです。パスワードは変更されていません
 msgid "Unmanaged"
 msgstr "Unmanaged"
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "保存されていない変更"
 
@@ -2996,6 +3120,12 @@ msgstr "%q上のVLANs"
 msgid "VLANs on %q (%s)"
 msgstr "%q上のVLAN (%s)"
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "VPN サーバー"
 
@@ -3003,6 +3133,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3294,8 +3430,14 @@ msgstr "はい"
 msgid "« Back"
 msgstr "« 戻る"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "PPPリンクのIPv6ネゴシエーションを有効にする"
+#~ msgid "Delete this interface"
+#~ msgstr "インターフェースを削除します"
+
+#~ msgid "Flags"
+#~ msgstr "フラグ"
+
+#~ msgid "Rule #"
+#~ msgstr "ルール #"
 
 #~ msgid "Ignore Hosts files"
 #~ msgstr "ホストファイルを無視する"

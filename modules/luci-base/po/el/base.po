@@ -282,6 +282,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Κεραία 1"
 
@@ -317,6 +323,9 @@ msgstr "Συνδεδεμένοι Σταθμοί"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr ""
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -336,6 +345,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -468,6 +492,9 @@ msgstr "Κανάλι"
 msgid "Check"
 msgstr "Έλεγχος"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Άθροισμα Ελέγχου"
 
@@ -488,6 +515,9 @@ msgid ""
 msgstr ""
 
 msgid "Cipher"
+msgstr ""
+
+msgid "Cisco UDP encapsulation"
 msgstr ""
 
 msgid ""
@@ -640,6 +670,9 @@ msgstr "Προωθήσεις DNS"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -674,9 +707,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Διαγραφή"
-
-msgid "Delete this interface"
-msgstr "Διαγραφή αυτής της διεπαφής"
 
 msgid "Delete this network"
 msgstr "Διαγραφή αυτού του δικτύου"
@@ -723,6 +753,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "Απενεργοποίηση ρυθμίσεων DNS"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr "Απενεργοποίηση χρονιστή HW-Beacon"
@@ -854,10 +887,16 @@ msgstr "Ενεργοποίηση <abbr title=\"Spanning Tree Protocol\">STP</abb
 msgid "Enable HE.net dynamic endpoint update"
 msgstr "Ενεργοποίηση ενημέρωσης δυναμικού τερματικού σημείου HE.net."
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Ενεργοποίηση διαπραγμάτευσης IPv6 πάνω στη PPP ζεύξη"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Ενεργοποίηση διέλευσης Jumbo Frame"
 
 msgid "Enable NTP client"
+msgstr ""
+
+msgid "Enable Single DES"
 msgstr ""
 
 msgid "Enable TFTP server"
@@ -933,6 +972,9 @@ msgstr "Εξωτερικός εξυπηρετητής καταγραφής συ�
 msgid "External system log server port"
 msgstr ""
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Γρήγορα Πλαίσια"
 
@@ -953,6 +995,11 @@ msgstr "Φιλτράρισμα ιδιωτικών"
 
 msgid "Filter useless"
 msgstr "Φιλτράρισμα άχρηστων"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Εύρεση και σύνδεση σε δίκτυο"
@@ -977,9 +1024,6 @@ msgstr "Έκδοση Υλικολογισμικού"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr ""
-
-msgid "Flags"
-msgstr "Σημαίες"
 
 msgid "Flash Firmware"
 msgstr "Φλασάρισμα Firmware"
@@ -1011,6 +1055,9 @@ msgstr "Επιβολή TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Επιβολή TKIP και CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1057,6 +1104,9 @@ msgstr ""
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1064,6 +1114,9 @@ msgid "Generic 802.11%s Wireless Controller"
 msgstr ""
 
 msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+
+msgid "Global Settings"
 msgstr ""
 
 msgid "Global network options"
@@ -1074,6 +1127,9 @@ msgstr ""
 
 msgid "Go to relevant configuration page"
 msgstr "Μετάβαση στη σχετική σελίδα ρυθμίσεων"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1131,6 +1187,9 @@ msgid "Hostnames"
 msgstr "Ονόματα Υπολογιστών"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1234,6 +1293,12 @@ msgstr ""
 
 msgid "Identity"
 msgstr "Ταυτότητα"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1469,6 +1534,9 @@ msgid ""
 "requests to"
 msgstr ""
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr ""
 
@@ -1489,6 +1557,9 @@ msgstr "Μέσος όρος φόρτου"
 
 msgid "Loading"
 msgstr "Φόρτωση"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Τοπική διεύθυνση IPv4"
@@ -1596,6 +1667,11 @@ msgstr ""
 msgid "Maximum hold time"
 msgstr "Μέγιστος χρόνος κράτησης"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr "Μέγιστος αριθμός διευθύνσεων lease"
 
@@ -1664,11 +1740,17 @@ msgstr ""
 "Τα σημεία προσάρτησης ορίζουν σε ποιο σημείο στο σύστημα αρχείων θα "
 "προσαρτηθεί μία συσκευή μνήμης"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "Επιλογές προσάρτησης"
 
 msgid "Mount point"
 msgstr "Σημείο προσάρτησης"
+
+msgid "Mount swap not specifically configured"
+msgstr ""
 
 msgid "Mounted file systems"
 msgstr "Προσαρτημένα συστήματα αρχείων"
@@ -1688,10 +1770,16 @@ msgstr "Διεύθυνση Multicast"
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1732,6 +1820,9 @@ msgstr "Επόμενο »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "Δεν υπάρχει ρυθμισμένος DHCP εξυπηρετητής για αυτή τη διεπαφή"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr "Δεν υπάρχουν αλυσίδες σε αυτόν τον πίνακα"
@@ -1790,6 +1881,9 @@ msgstr ""
 msgid "Note: Configuration files will be erased."
 msgstr "Σημείωση: Τα αρχεία παραμετροποίησης θα διαγραφούν."
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Επισήμανση"
 
@@ -1801,6 +1895,12 @@ msgstr "Εντάξει"
 
 msgid "OPKG-Configuration"
 msgstr "Παραμετροποίηση OPKG"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr ""
@@ -1918,6 +2018,9 @@ msgstr "PPPoATM"
 msgid "PPPoE"
 msgstr "PPPoE"
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr "PPtP"
 
@@ -1967,6 +2070,12 @@ msgid "Path to executable which handles the button event"
 msgstr "Διαδρομή για το εκτελέσιμο που χειρίζεται το γεγονός του κουμπιού"
 
 msgid "Peak:"
+msgstr ""
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
 msgstr ""
 
 msgid "Perform reboot"
@@ -2051,6 +2160,9 @@ msgid "Public prefix routed to this device for distribution to clients."
 msgstr ""
 
 msgid "Quality"
+msgstr ""
+
+msgid "RFC3947 NAT-T mode"
 msgstr ""
 
 msgid "RTS/CTS Threshold"
@@ -2259,9 +2371,6 @@ msgstr ""
 "Οι διαδρομές ορίζουν τη διεπαφή και πύλη από την οποία κάποιος υπολογιστής ή "
 "δίκτυο μπορεί να είναι προσβάσιμο/ς."
 
-msgid "Rule #"
-msgstr "Κανόνας #"
-
 msgid "Run a filesystem check before mounting the device"
 msgstr "Εκτέλεση ελέγχου του συστήματος αρχείων πριν προσαρτηθεί η συσκευή"
 
@@ -2278,6 +2387,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "Πρόσβαση SSH"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "Κλειδιά SSH"
@@ -2535,6 +2653,9 @@ msgstr "Πίνακας"
 
 msgid "Target"
 msgstr "Στόχος"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Τερματισμός"
@@ -2852,6 +2973,9 @@ msgstr "Άγνωστο Λάθος. ο κωδικός πρόσβασης δεν �
 msgid "Unmanaged"
 msgstr ""
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Μη-αποθηκευμένες Αλλαγές"
 
@@ -2952,6 +3076,12 @@ msgstr ""
 msgid "VLANs on %q (%s)"
 msgstr ""
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "Εξυπηρετητής VPN"
 
@@ -2959,6 +3089,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3248,8 +3384,14 @@ msgstr "ναι"
 msgid "« Back"
 msgstr "« Πίσω"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "Ενεργοποίηση διαπραγμάτευσης IPv6 πάνω στη PPP ζεύξη"
+#~ msgid "Delete this interface"
+#~ msgstr "Διαγραφή αυτής της διεπαφής"
+
+#~ msgid "Flags"
+#~ msgstr "Σημαίες"
+
+#~ msgid "Rule #"
+#~ msgstr "Κανόνας #"
 
 #~ msgid "Path"
 #~ msgstr "Διαδρομή"

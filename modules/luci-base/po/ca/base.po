@@ -275,6 +275,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Antena 1"
 
@@ -310,6 +316,9 @@ msgstr "Estacions associades"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Controlador sense fils d'Atheros 802.11%s"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -329,6 +338,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -460,6 +484,9 @@ msgstr "Canal"
 msgid "Check"
 msgstr "Comprovació"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Suma de verificació"
 
@@ -483,6 +510,9 @@ msgstr ""
 
 msgid "Cipher"
 msgstr "Xifra"
+
+msgid "Cisco UDP encapsulation"
+msgstr ""
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -627,6 +657,9 @@ msgstr "Reenviaments DNS"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -659,9 +692,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Suprimeix"
-
-msgid "Delete this interface"
-msgstr "Suprimeix aquesta interfície"
 
 msgid "Delete this network"
 msgstr "Suprimeix aquesta xarxa"
@@ -707,6 +737,9 @@ msgstr ""
 "abbr> en aquesta interfície."
 
 msgid "Disable DNS setup"
+msgstr ""
+
+msgid "Disable Encryption"
 msgstr ""
 
 msgid "Disable HW-Beacon timer"
@@ -832,11 +865,17 @@ msgstr "Habilita l'<abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr ""
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Habilita negociació IPv6 en la enllaç PPP"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Habilita el passatge de trames enormes"
 
 msgid "Enable NTP client"
 msgstr "Habilita el client NTP"
+
+msgid "Enable Single DES"
+msgstr ""
 
 msgid "Enable TFTP server"
 msgstr "Habilita el servidor TFTP"
@@ -908,6 +947,9 @@ msgstr ""
 msgid "External system log server port"
 msgstr ""
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Fast Frames"
 
@@ -928,6 +970,11 @@ msgstr "Filtra privat"
 
 msgid "Filter useless"
 msgstr "Filtra els no útils"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Troba i uneix-te a la xarxa"
@@ -952,9 +999,6 @@ msgstr "Versió de microprogramari"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr ""
-
-msgid "Flags"
-msgstr "Flags"
 
 msgid "Flash Firmware"
 msgstr "Reescriu el microprogramari"
@@ -985,6 +1029,9 @@ msgstr "Força el TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Força el TKIP i el CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1031,6 +1078,9 @@ msgstr ""
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1042,6 +1092,9 @@ msgstr ""
 "La contrasenya i la confirmació de contrasenya no es coincideixen. La "
 "contrasenya no s'ha canviat!"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1050,6 +1103,9 @@ msgstr "Vés a la configuració de contrasenya"
 
 msgid "Go to relevant configuration page"
 msgstr "Vés a la pàgina de configuració"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1107,6 +1163,9 @@ msgid "Hostnames"
 msgstr "Noms de màquina"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1210,6 +1269,12 @@ msgstr "IPv6-sobre-IPv4 (6to4)"
 
 msgid "Identity"
 msgstr "Identitat"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1441,6 +1506,9 @@ msgid ""
 "requests to"
 msgstr ""
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr ""
 
@@ -1461,6 +1529,9 @@ msgstr "Carrega mitjana"
 
 msgid "Loading"
 msgstr "Carregant"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Adreça IPv4 local"
@@ -1567,6 +1638,11 @@ msgstr ""
 msgid "Maximum hold time"
 msgstr ""
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr ""
 
@@ -1634,10 +1710,16 @@ msgstr ""
 "Els punts de muntatge defineixen en quin punt un dispositiu de memòria "
 "s'adjuntarà amb el sistema de fitxers"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "Opcions de muntatge"
 
 msgid "Mount point"
+msgstr ""
+
+msgid "Mount swap not specifically configured"
 msgstr ""
 
 msgid "Mounted file systems"
@@ -1658,10 +1740,16 @@ msgstr "Adreça de difusió selectiva"
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1702,6 +1790,9 @@ msgstr "Següent"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "Cap servidor DHCP configurat en aquesta interfície"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr "No hi ha cadenes a aquesta taula"
@@ -1760,6 +1851,9 @@ msgstr "No connectat"
 msgid "Note: Configuration files will be erased."
 msgstr "Nota: Els fitxers de configuració s'esborraran."
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Avís"
 
@@ -1771,6 +1865,12 @@ msgstr "D'acord"
 
 msgid "OPKG-Configuration"
 msgstr "Configuració d&#39;OPKG"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr ""
@@ -1888,6 +1988,9 @@ msgstr "PPPoATM"
 msgid "PPPoE"
 msgstr "PPPoE"
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr "PPtP"
 
@@ -1938,6 +2041,12 @@ msgstr ""
 
 msgid "Peak:"
 msgstr "Màxim:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "Executa un reinici"
@@ -2021,6 +2130,9 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Calidad"
+
+msgid "RFC3947 NAT-T mode"
+msgstr ""
 
 msgid "RTS/CTS Threshold"
 msgstr "Llindar RTS/CTS"
@@ -2227,9 +2339,6 @@ msgstr ""
 "Les rutes especifiquen per quina interfície i passarel·la es pot arribar a "
 "un cert ordinador o xarxa."
 
-msgid "Rule #"
-msgstr ""
-
 msgid "Run a filesystem check before mounting the device"
 msgstr ""
 
@@ -2246,6 +2355,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "Accés SSH"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "Claus SSH"
@@ -2501,6 +2619,9 @@ msgstr "Taula"
 
 msgid "Target"
 msgstr "Destí"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Acaba"
@@ -2827,6 +2948,9 @@ msgstr "La contrasenya no s'ha canviat a causa d'un error desconegut!"
 msgid "Unmanaged"
 msgstr "Sense gestionar"
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Canvis sense desar"
 
@@ -2927,6 +3051,12 @@ msgstr "VLANs en %q"
 msgid "VLANs on %q (%s)"
 msgstr "VLANs en %q (%s)"
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "Servidor VPN"
 
@@ -2934,6 +3064,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3226,8 +3362,11 @@ msgstr "sí"
 msgid "« Back"
 msgstr "« Enrere"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "Habilita negociació IPv6 en la enllaç PPP"
+#~ msgid "Delete this interface"
+#~ msgstr "Suprimeix aquesta interfície"
+
+#~ msgid "Flags"
+#~ msgstr "Flags"
 
 #~ msgid "Path"
 #~ msgstr "Ruta"

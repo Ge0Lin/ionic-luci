@@ -271,6 +271,12 @@ msgstr ""
 msgid "Announced DNS servers"
 msgstr ""
 
+msgid "Anonymous Mount"
+msgstr ""
+
+msgid "Anonymous Swap"
+msgstr ""
+
 msgid "Antenna 1"
 msgstr "Antenne 1"
 
@@ -306,6 +312,9 @@ msgstr "Tilkoblede Klienter"
 msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Atheros 802.11%s Trådløs Kontroller"
 
+msgid "Auth Group"
+msgstr ""
+
 msgid "AuthGroup"
 msgstr ""
 
@@ -325,6 +334,21 @@ msgid "Automatic"
 msgstr ""
 
 msgid "Automatic Homenet (HNCP)"
+msgstr ""
+
+msgid "Automatically check filesystem for errors before mounting"
+msgstr ""
+
+msgid "Automatically mount filesystems on hotplug"
+msgstr ""
+
+msgid "Automatically mount swap on hotplug"
+msgstr ""
+
+msgid "Automount Filesystem"
+msgstr ""
+
+msgid "Automount Swap"
 msgstr ""
 
 msgid "Available"
@@ -455,6 +479,9 @@ msgstr "Kanal"
 msgid "Check"
 msgstr "Kontroller"
 
+msgid "Check fileystems before mount"
+msgstr ""
+
 msgid "Checksum"
 msgstr "Kontrollsum"
 
@@ -478,6 +505,9 @@ msgstr ""
 
 msgid "Cipher"
 msgstr "Krypteringsmetode"
+
+msgid "Cisco UDP encapsulation"
+msgstr ""
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -627,6 +657,9 @@ msgstr "DNS videresendinger"
 msgid "DNS-Label / FQDN"
 msgstr ""
 
+msgid "DPD Idle Timeout"
+msgstr ""
+
 msgid "DS-Lite AFTR address"
 msgstr ""
 
@@ -661,9 +694,6 @@ msgstr ""
 
 msgid "Delete"
 msgstr "Fjern"
-
-msgid "Delete this interface"
-msgstr "Fjern dette grensesnitt"
 
 msgid "Delete this network"
 msgstr "Fjern dette nettverket"
@@ -710,6 +740,9 @@ msgstr ""
 
 msgid "Disable DNS setup"
 msgstr "Deaktiver DNS oppsett"
+
+msgid "Disable Encryption"
+msgstr ""
 
 msgid "Disable HW-Beacon timer"
 msgstr "Deaktiver HW-Beacon timer"
@@ -838,11 +871,17 @@ msgstr "Aktiver <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgid "Enable HE.net dynamic endpoint update"
 msgstr "Aktiver HE,net dynamisk endepunkt oppdatering"
 
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Aktiver IPv6 på PPP lenke"
+
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Aktiver Jumbo Frames gjennomgang"
 
 msgid "Enable NTP client"
 msgstr "Aktiver NTP klient"
+
+msgid "Enable Single DES"
+msgstr ""
 
 msgid "Enable TFTP server"
 msgstr "Aktiver TFTP server"
@@ -915,6 +954,9 @@ msgstr "Ekstern systemlogg server"
 msgid "External system log server port"
 msgstr "Ekstern systemlogg server port"
 
+msgid "Extra SSH command options"
+msgstr ""
+
 msgid "Fast Frames"
 msgstr "Fast Frames"
 
@@ -935,6 +977,11 @@ msgstr "Filtrer private"
 
 msgid "Filter useless"
 msgstr "Filtrer ubrukelige"
+
+msgid ""
+"Find all currently attached filesystems and swap and replace configuration "
+"with defaults based on what was detected"
+msgstr ""
 
 msgid "Find and join network"
 msgstr "Finn og koble til nettverk"
@@ -959,9 +1006,6 @@ msgstr "Firmware Versjon"
 
 msgid "Fixed source port for outbound DNS queries"
 msgstr "Fast kilde port for utgående DNS-spørringer"
-
-msgid "Flags"
-msgstr "Flagg"
 
 msgid "Flash Firmware"
 msgstr "Firmware Oppradering"
@@ -993,6 +1037,9 @@ msgstr "Bruk TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Bruk TKIP og CCMP (AES)"
+
+msgid "Force use of NAT-T"
+msgstr ""
 
 msgid "Form token mismatch"
 msgstr ""
@@ -1039,6 +1086,9 @@ msgstr "Generelt Oppsett"
 msgid "General options for opkg"
 msgstr ""
 
+msgid "Generate Config"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Opprett arkiv"
 
@@ -1048,6 +1098,9 @@ msgstr "Generell 802.11%s Trådløs Kontroller"
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "Det oppgitte passordet var ikke korrekt, passord ble ikke endret!"
 
+msgid "Global Settings"
+msgstr ""
+
 msgid "Global network options"
 msgstr ""
 
@@ -1056,6 +1109,9 @@ msgstr "Gå til passord konfigurasjon..."
 
 msgid "Go to relevant configuration page"
 msgstr "Gå til relevant konfigurasjonen side"
+
+msgid "Group Password"
+msgstr ""
 
 msgid "Guest"
 msgstr ""
@@ -1114,6 +1170,9 @@ msgid "Hostnames"
 msgstr "Vertsnavn"
 
 msgid "Hybrid"
+msgstr ""
+
+msgid "IKE DH Group"
 msgstr ""
 
 msgid "IP address"
@@ -1217,6 +1276,12 @@ msgstr "IPv6-over-IPv4 (6til4)"
 
 msgid "Identity"
 msgstr "Identitet"
+
+msgid "If checked, 1DES is enaled"
+msgstr ""
+
+msgid "If checked, encryption is disabled"
+msgstr ""
 
 msgid ""
 "If specified, mount the device by its UUID instead of a fixed device node"
@@ -1448,6 +1513,9 @@ msgstr ""
 "Liste med <abbr title=\"Domain Name System\">DNS</abbr> servere som "
 "forespørsler blir videresendt til"
 
+msgid "List of SSH key files for auth"
+msgstr ""
+
 msgid "List of domains to allow RFC1918 responses for"
 msgstr "Liste over domener hvor en tillater RFC1918 svar"
 
@@ -1469,6 +1537,9 @@ msgstr "Belastning Gjennomsnitt"
 
 msgid "Loading"
 msgstr "Laster"
+
+msgid "Local IP address to assign"
+msgstr ""
 
 msgid "Local IPv4 address"
 msgstr "Lokal IPv4 adresse"
@@ -1580,6 +1651,11 @@ msgstr "Maksimalt antall sekunder å vente på at modemet skal bli klart"
 msgid "Maximum hold time"
 msgstr "Maksimal holde tid"
 
+msgid ""
+"Maximum length of the name is 15 characters including the automatic protocol/"
+"bridge prefix (br-, 6in4-, pppoe- etc.)"
+msgstr ""
+
 msgid "Maximum number of leased addresses."
 msgstr "Maksimalt antall utleide adresser."
 
@@ -1647,11 +1723,17 @@ msgstr ""
 "Monterings punkter definerer hvor lagrings enheter blir tilsluttet "
 "filsystemet"
 
+msgid "Mount filesystems not specifically configured"
+msgstr ""
+
 msgid "Mount options"
 msgstr "Monterings alternativer"
 
 msgid "Mount point"
 msgstr "Monterings punkt"
+
+msgid "Mount swap not specifically configured"
+msgstr ""
 
 msgid "Mounted file systems"
 msgstr "Monterte Filsystemer"
@@ -1671,10 +1753,16 @@ msgstr "Multicast adresse"
 msgid "NAS ID"
 msgstr "NAS ID"
 
+msgid "NAT-T Mode"
+msgstr ""
+
 msgid "NAT64 Prefix"
 msgstr ""
 
 msgid "NDP-Proxy"
+msgstr ""
+
+msgid "NT Domain"
 msgstr ""
 
 msgid "NTP server candidates"
@@ -1715,6 +1803,9 @@ msgstr "Neste »"
 
 msgid "No DHCP Server configured for this interface"
 msgstr "Ingen DHCP server er konfigurert for dette grensesnittet"
+
+msgid "No NAT-T"
+msgstr ""
 
 msgid "No chains in this table"
 msgstr "Ingen lenker i denne tabellen"
@@ -1773,6 +1864,9 @@ msgstr "Ikke tilkoblet"
 msgid "Note: Configuration files will be erased."
 msgstr "Merk: Konfigurasjonsfiler vil bli slettet"
 
+msgid "Note: interface name length"
+msgstr ""
+
 msgid "Notice"
 msgstr "Merk"
 
@@ -1784,6 +1878,12 @@ msgstr "OK"
 
 msgid "OPKG-Configuration"
 msgstr "<abbr title=\"Open PacKaGe Management\">OPKG</abbr>-Konfigurasjon"
+
+msgid "Obfuscated Group Password"
+msgstr ""
+
+msgid "Obfuscated Password"
+msgstr ""
 
 msgid "Off-State Delay"
 msgstr "Forsinkelse ved tilstand Av"
@@ -1903,6 +2003,9 @@ msgstr "PPPoATM"
 msgid "PPPoE"
 msgstr "PPPoE"
 
+msgid "PPPoSSH"
+msgstr ""
+
 msgid "PPtP"
 msgstr "PPtP"
 
@@ -1953,6 +2056,12 @@ msgstr "Sti til program som håndterer handling ved bruk av knapp"
 
 msgid "Peak:"
 msgstr "Maksimalt:"
+
+msgid "Peer IP address to assign"
+msgstr ""
+
+msgid "Perfect Forward Secrecy"
+msgstr ""
 
 msgid "Perform reboot"
 msgstr "Omstart nå"
@@ -2038,6 +2147,9 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Kvalitet"
+
+msgid "RFC3947 NAT-T mode"
+msgstr ""
 
 msgid "RTS/CTS Threshold"
 msgstr "RTS/CTS Terskel"
@@ -2256,9 +2368,6 @@ msgstr ""
 "Ruter, angir hvilket nettverksgrensesnitt og hvilken gateway som brukes for "
 "å nå et gitt nettverk eller vert."
 
-msgid "Rule #"
-msgstr "Regel #"
-
 msgid "Run a filesystem check before mounting the device"
 msgstr "Kjør filsystem sjekk før montering av enheten"
 
@@ -2275,6 +2384,15 @@ msgstr ""
 
 msgid "SSH Access"
 msgstr "SSH Tilgang"
+
+msgid "SSH server address"
+msgstr ""
+
+msgid "SSH server port"
+msgstr ""
+
+msgid "SSH username"
+msgstr ""
 
 msgid "SSH-Keys"
 msgstr "SSH-Nøkler"
@@ -2540,6 +2658,9 @@ msgstr "Tabell"
 
 msgid "Target"
 msgstr "Mål"
+
+msgid "Target network"
+msgstr ""
 
 msgid "Terminate"
 msgstr "Avslutte"
@@ -2891,6 +3012,9 @@ msgstr "Ukjent feil, passordet ble ikke endret!"
 msgid "Unmanaged"
 msgstr "Uhåndtert"
 
+msgid "Unmount"
+msgstr ""
+
 msgid "Unsaved Changes"
 msgstr "Ulagrede Endringer"
 
@@ -2998,6 +3122,12 @@ msgstr "VLANs på %q"
 msgid "VLANs on %q (%s)"
 msgstr "VLANs på %q (%s)"
 
+msgid "VPN Local address"
+msgstr ""
+
+msgid "VPN Local port"
+msgstr ""
+
 msgid "VPN Server"
 msgstr "VPN server"
 
@@ -3005,6 +3135,12 @@ msgid "VPN Server port"
 msgstr ""
 
 msgid "VPN Server's certificate SHA1 hash"
+msgstr ""
+
+msgid "VPNC (CISCO 3000 (and others) VPN)"
+msgstr ""
+
+msgid "Vendor"
 msgstr ""
 
 msgid "Vendor Class to send when requesting DHCP"
@@ -3296,8 +3432,14 @@ msgstr "ja"
 msgid "« Back"
 msgstr "« Tilbake"
 
-#~ msgid "Enable IPv6 negotiation on the PPP link"
-#~ msgstr "Aktiver IPv6 på PPP lenke"
+#~ msgid "Delete this interface"
+#~ msgstr "Fjern dette grensesnitt"
+
+#~ msgid "Flags"
+#~ msgstr "Flagg"
+
+#~ msgid "Rule #"
+#~ msgstr "Regel #"
 
 #~ msgid "Ignore Hosts files"
 #~ msgstr "Ignorer vertsfiler"
