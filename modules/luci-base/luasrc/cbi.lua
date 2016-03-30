@@ -262,6 +262,7 @@ function Node.render_children(self, ...)
 	local k, node
 	for k, node in ipairs(self.children) do
 		node.last_child = (k == #self.children)
+		node.index = k
 		node:render(...)
 	end
 end
@@ -336,7 +337,7 @@ function Map.__init__(self, config, ...)
 end
 
 function Map.formvalue(self, key)
-	return self.readinput and luci.http.formvalue(key)
+	return self.readinput and luci.http.formvalue(key) or nil
 end
 
 function Map.formvaluetable(self, key)
@@ -385,41 +386,45 @@ function Map.parse(self, readinput, ...)
 
 	Node.parse(self, ...)
 
-	self:_run_hooks("on_save", "on_before_save")
-	for i, config in ipairs(self.parsechain) do
-		self.uci:save(config)
-	end
-	self:_run_hooks("on_after_save")
-	if (not self.proceed and self.flow.autoapply) or luci.http.formvalue("cbi.apply") then
-		self:_run_hooks("on_before_commit")
+	if self.save then
+		self:_run_hooks("on_save", "on_before_save")
 		for i, config in ipairs(self.parsechain) do
-			self.uci:commit(config)
-
-			-- Refresh data because commit changes section names
-			self.uci:load(config)
+			self.uci:save(config)
 		end
-		self:_run_hooks("on_commit", "on_after_commit", "on_before_apply")
-		if self.apply_on_parse then
-			self.uci:apply(self.parsechain)
-			self:_run_hooks("on_apply", "on_after_apply")
-		else
-			-- This is evaluated by the dispatcher and delegated to the
-			-- template which in turn fires XHR to perform the actual
-			-- apply actions.
-			self.apply_needed = true
+		self:_run_hooks("on_after_save")
+		if (not self.proceed and self.flow.autoapply) or luci.http.formvalue("cbi.apply") then
+			self:_run_hooks("on_before_commit")
+			for i, config in ipairs(self.parsechain) do
+				self.uci:commit(config)
+
+				-- Refresh data because commit changes section names
+				self.uci:load(config)
+			end
+			self:_run_hooks("on_commit", "on_after_commit", "on_before_apply")
+			if self.apply_on_parse then
+				self.uci:apply(self.parsechain)
+				self:_run_hooks("on_apply", "on_after_apply")
+			else
+				-- This is evaluated by the dispatcher and delegated to the
+				-- template which in turn fires XHR to perform the actual
+				-- apply actions.
+				self.apply_needed = true
+			end
+
+			-- Reparse sections
+			Node.parse(self, true)
 		end
-
-		-- Reparse sections
-		Node.parse(self, true)
-	end
-	for i, config in ipairs(self.parsechain) do
-		self.uci:unload(config)
-	end
-	if type(self.commit_handler) == "function" then
-		self:commit_handler(self:submitstate())
+		for i, config in ipairs(self.parsechain) do
+			self.uci:unload(config)
+		end
+		if type(self.commit_handler) == "function" then
+			self:commit_handler(self:submitstate())
+		end
 	end
 
-	if self.proceed then
+	if not self.save then
+		self.state = FORM_INVALID
+	elseif self.proceed then
 		self.state = FORM_PROCEED
 	elseif self.changed then
 		self.state = FORM_CHANGED
@@ -881,19 +886,24 @@ function AbstractSection.render_tab(self, tab, ...)
 	local k, node
 	for k, node in ipairs(self.tabs[tab].childs) do
 		node.last_child = (k == #self.tabs[tab].childs)
+		node.index = k
 		node:render(...)
 	end
 end
 
 -- Parse optional options
-function AbstractSection.parse_optionals(self, section)
+function AbstractSection.parse_optionals(self, section, noparse)
 	if not self.optional then
 		return
 	end
 
 	self.optionals[section] = {}
 
-	local field = self.map:formvalue("cbi.opt."..self.config.."."..section)
+	local field = nil
+	if not noparse then
+		field = self.map:formvalue("cbi.opt."..self.config.."."..section)
+	end
+
 	for k,v in ipairs(self.children) do
 		if v.optional and not v:cfgvalue(section) and not self:has_tabs() then
 			if field == v.option then
@@ -1071,6 +1081,11 @@ function NamedSection.__init__(self, map, section, stype, ...)
 	self.section = section
 end
 
+function NamedSection.prepare(self)
+	AbstractSection.prepare(self)
+	AbstractSection.parse_optionals(self, self.section, true)
+end
+
 function NamedSection.parse(self, novld)
 	local s = self.section
 	local active = self:cfgvalue(s)
@@ -1118,6 +1133,15 @@ function TypedSection.__init__(self, map, type, ...)
 	self.template = "cbi/tsection"
 	self.deps = {}
 	self.anonymous = false
+end
+
+function TypedSection.prepare(self)
+	AbstractSection.prepare(self)
+
+	local i, s
+	for i, s in ipairs(self:cfgsections()) do
+		AbstractSection.parse_optionals(self, s, true)
+	end
 end
 
 -- Return all matching UCI sections for this TypedSection
@@ -1272,7 +1296,6 @@ function AbstractValue.__init__(self, map, section, option, ...)
 	self.tag_reqerror = {}
 	self.tag_error = {}
 	self.deps = {}
-	self.subdeps = {}
 	--self.cast = "string"
 
 	self.track_missing = false
@@ -1296,7 +1319,30 @@ function AbstractValue.depends(self, field, value)
 		deps = field
 	end
 
-	table.insert(self.deps, {deps=deps, add=""})
+	table.insert(self.deps, deps)
+end
+
+-- Serialize dependencies
+function AbstractValue.deplist2json(self, section, deplist)
+	local deps, i, d = { }
+
+	if type(self.deps) == "table" then
+		for i, d in ipairs(deplist or self.deps) do
+			local a, k, v = { }
+			for k, v in pairs(d) do
+				if k:find("!", 1, true) then
+					a[k] = v
+				elseif k:find(".", 1, true) then
+					a['cbid.%s' % k] = v
+				else
+					a['cbid.%s.%s.%s' %{ self.config, section, k }] = v
+				end
+			end
+			deps[#deps+1] = a
+		end
+	end
+
+	return util.serialize_json(deps)
 end
 
 -- Generates the unique CBID
@@ -1579,6 +1625,7 @@ function ListValue.__init__(self, ...)
 
 	self.keylist = {}
 	self.vallist = {}
+	self.deplist = {}
 	self.size   = 1
 	self.widget = "select"
 end
@@ -1596,10 +1643,7 @@ function ListValue.value(self, key, val, ...)
 	val = val or key
 	table.insert(self.keylist, tostring(key))
 	table.insert(self.vallist, tostring(val))
-
-	for i, deps in ipairs({...}) do
-		self.subdeps[#self.subdeps + 1] = {add = "-"..key, deps=deps}
-	end
+	table.insert(self.deplist, {...})
 end
 
 function ListValue.validate(self, val)

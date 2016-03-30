@@ -1,35 +1,27 @@
 #
-# Copyright (C) 2015 Bright Things UN Ltd. - http://bright-things.com
+# Copyright (C) 2015 OpenWrt.org
+#
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
 #
 
 include $(TOPDIR)/rules.mk
 
-# LuCI specific settings
-LUCI_TITLE:=LuCI uhttpd config
-LUCI_DEPENDS:=+luci-mod-admin-full
+LUCI_TITLE:=uHTTPd Webserver Configuration
+LUCI_DEPENDS:=+uhttpd
 LUCI_PKGARCH:=all
 
 PKG_NAME:=luci-app-uhttpd
-
-# Version == major.minor.patch
-# increase on new functionality (minor) or patches (patch)
-PKG_VERSION:=0.0.1
-
-# Release == build
-# increase on changes of translation files
+PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
+PKG_LICENSE:=Apache-2.0
+PKG_MAINTAINER:=Daniel Dickinson <openwrt@daniel.thecshore.com>
 
-PKG_LICENSE:=Proprietary
-PKG_MAINTAINER:=Lars Boegild Thomsen <lth@bright-things.com>
+PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 
-define Package/$(PKG_NAME)/config
-# shown in make menuconfig <Help>
-help
-	$(LUCI_TITLE)
+include $(INCLUDE_DIR)/package.mk
 
-	Version   : $(PKG_VERSION)-$(PKG_RELEASE)
-	Maintainer: $(PKG_MAINTAINER)
-endef
+LUA_TARGET:=source
 
 include ../../luci.mk
 
