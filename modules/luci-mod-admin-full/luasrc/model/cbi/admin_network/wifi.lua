@@ -161,6 +161,7 @@ if found_sta then
 else
 	ch = s:taboption("general", Value, "_mode_freq", '<br />'..translate("Operating frequency"))
 	ch.hwmodes = hw_modes
+	ch.htmodes = iw.htmodelist
 	ch.freqlist = iw.freqlist
 	ch.template = "cbi/wireless_modefreq"
 
@@ -474,6 +475,9 @@ if hwtype == "mac80211" then
 	wmm:depends({mode="ap"})
 	wmm:depends({mode="ap-wds"})
 	wmm.default = wmm.enabled
+	
+	ifname = s:taboption("advanced", Value, "ifname", translate("Interface name"), translate("Override default interface name"))
+	ifname.optional = true
 end
 
 
@@ -958,6 +962,10 @@ if hwtype == "atheros" or hwtype == "mac80211" or hwtype == "prism2" then
 	identity:depends({mode="sta-wds", eap_type="peap", encryption="wpa"})
 	identity:depends({mode="sta-wds", eap_type="ttls", encryption="wpa2"})
 	identity:depends({mode="sta-wds", eap_type="ttls", encryption="wpa"})
+	identity:depends({mode="sta", eap_type="tls", encryption="wpa2"})
+	identity:depends({mode="sta", eap_type="tls", encryption="wpa"})
+	identity:depends({mode="sta-wds", eap_type="tls", encryption="wpa2"})
+	identity:depends({mode="sta-wds", eap_type="tls", encryption="wpa"})
 
 	password = s:taboption("encryption", Value, "password", translate("Password"))
 	password:depends({mode="sta", eap_type="fast", encryption="wpa2"})

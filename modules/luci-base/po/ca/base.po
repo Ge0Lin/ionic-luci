@@ -122,13 +122,19 @@ msgstr "Consultes concurrents <abbr title=\"màximes\">max.</abbr>"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Parella: %s / Grup: %s'>%s - %s</abbr>"
 
+msgid "A43C + J43 + A43"
+msgstr ""
+
+msgid "A43C + J43 + A43 + V43"
+msgstr ""
+
 msgid "ADSL"
 msgstr ""
 
-msgid "ADSL Status"
+msgid "AICCU (SIXXS)"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
+msgid "ANSI T1.413"
 msgstr ""
 
 msgid "APN"
@@ -139,6 +145,9 @@ msgstr "Suport AR"
 
 msgid "ARP retry threshold"
 msgstr "Llindar de reintent ARP"
+
+msgid "ATM (Asynchronous Transfer Mode)"
+msgstr ""
 
 msgid "ATM Bridges"
 msgstr "Ponts ATM"
@@ -160,6 +169,9 @@ msgstr ""
 
 msgid "ATM device number"
 msgstr "Número de dispositiu ATM"
+
+msgid "ATU-C System Vendor ID"
+msgstr ""
 
 msgid "AYIYA"
 msgstr ""
@@ -225,6 +237,9 @@ msgstr "Administració"
 msgid "Advanced Settings"
 msgstr "Paràmetres avançats"
 
+msgid "Aggregate Transmit Power(ACTATP)"
+msgstr ""
+
 msgid "Alert"
 msgstr "Alerta"
 
@@ -265,6 +280,51 @@ msgstr ""
 
 msgid "An additional network will be created if you leave this unchecked."
 msgstr "Es crearà una xarxa addicional si deixes això sense marcar."
+
+msgid "Annex"
+msgstr ""
+
+msgid "Annex A + L + M (all)"
+msgstr ""
+
+msgid "Annex A G.992.1"
+msgstr ""
+
+msgid "Annex A G.992.2"
+msgstr ""
+
+msgid "Annex A G.992.3"
+msgstr ""
+
+msgid "Annex A G.992.5"
+msgstr ""
+
+msgid "Annex B (all)"
+msgstr ""
+
+msgid "Annex B G.992.1"
+msgstr ""
+
+msgid "Annex B G.992.3"
+msgstr ""
+
+msgid "Annex B G.992.5"
+msgstr ""
+
+msgid "Annex J (all)"
+msgstr ""
+
+msgid "Annex L G.992.3 POTS 1"
+msgstr ""
+
+msgid "Annex M (all)"
+msgstr ""
+
+msgid "Annex M G.992.3"
+msgstr ""
+
+msgid "Annex M G.992.5"
+msgstr ""
 
 msgid "Announce as default router even if no public prefix is available."
 msgstr ""
@@ -363,6 +423,12 @@ msgstr "Paquets disponibles"
 
 msgid "Average:"
 msgstr "Mitjana:"
+
+msgid "B43 + B43C"
+msgstr ""
+
+msgid "B43 + B43C + V43"
+msgstr ""
 
 msgid "BR / DMR / AFTR"
 msgstr ""
@@ -663,8 +729,20 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
+msgid "DSL"
+msgstr ""
+
+msgid "DSL Status"
+msgstr ""
+
+msgid "DSL line mode"
+msgstr ""
+
 msgid "DUID"
 msgstr "DUID"
+
+msgid "Data Rate"
+msgstr ""
 
 msgid "Debug"
 msgstr "Depuració"
@@ -674,6 +752,9 @@ msgstr "%d per defecte"
 
 msgid "Default gateway"
 msgstr "Passarel·la per defecte"
+
+msgid "Default is stateless + stateful"
+msgstr ""
 
 msgid "Default route"
 msgstr ""
@@ -922,6 +1003,9 @@ msgstr "Esborrant..."
 msgid "Error"
 msgstr "Error"
 
+msgid "Errored seconds (ES)"
+msgstr ""
+
 msgid "Ethernet Adapter"
 msgstr "Adaptador Ethernet"
 
@@ -994,6 +1078,9 @@ msgstr "Ajusts de tallafocs"
 msgid "Firewall Status"
 msgstr "Estat de tallafocs"
 
+msgid "Firmware File"
+msgstr ""
+
 msgid "Firmware Version"
 msgstr "Versió de microprogramari"
 
@@ -1038,6 +1125,9 @@ msgstr ""
 
 msgid "Forward DHCP traffic"
 msgstr "Reenvia el tràfic DHCP"
+
+msgid "Forward Error Correction Seconds (FECS)"
+msgstr ""
 
 msgid "Forward broadcast traffic"
 msgstr "Reenvia el tràfic difós"
@@ -1122,6 +1212,9 @@ msgstr ""
 msgid "Hang Up"
 msgstr "Penja"
 
+msgid "Header Error Code Errors (HEC)"
+msgstr ""
+
 msgid "Heartbeat"
 msgstr ""
 
@@ -1143,6 +1236,9 @@ msgstr "Controlador sense fil Hermes 802.11b"
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 "No mostris l'<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+
+msgid "Host"
+msgstr ""
 
 msgid "Host entries"
 msgstr "Entrades de noms de màquina"
@@ -1462,7 +1558,13 @@ msgstr "Llengua"
 msgid "Language and Style"
 msgstr "Llengua i estil"
 
+msgid "Latency"
+msgstr ""
+
 msgid "Leaf"
+msgstr ""
+
+msgid "Lease time"
 msgstr ""
 
 msgid "Lease validity time"
@@ -1489,13 +1591,16 @@ msgstr "Llegenda:"
 msgid "Limit"
 msgstr "Límit"
 
-msgid "Line Attenuation"
+msgid "Line Attenuation (LATN)"
 msgstr ""
 
-msgid "Line Speed"
+msgid "Line Mode"
 msgstr ""
 
 msgid "Line State"
+msgstr ""
+
+msgid "Line Uptime"
 msgstr ""
 
 msgid "Link On"
@@ -1567,7 +1672,7 @@ msgstr ""
 msgid "Localise queries"
 msgstr "Localitza les peticions"
 
-msgid "Locked to channel %d used by: %s"
+msgid "Locked to channel %s used by: %s"
 msgstr ""
 
 msgid "Log output level"
@@ -1584,6 +1689,9 @@ msgstr "Entra"
 
 msgid "Logout"
 msgstr "Surt"
+
+msgid "Loss of Signal Seconds (LOSS)"
+msgstr ""
 
 msgid "Lowest leased address as offset from the network address."
 msgstr ""
@@ -1618,6 +1726,9 @@ msgid ""
 msgstr ""
 
 msgid "Manual"
+msgstr ""
+
+msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
 msgid "Maximum Rate"
@@ -1827,11 +1938,14 @@ msgstr "Cap zona assignada"
 msgid "Noise"
 msgstr "Soroll"
 
-msgid "Noise Margin"
+msgid "Noise Margin (SNR)"
 msgstr ""
 
 msgid "Noise:"
 msgstr "Soroll:"
+
+msgid "Non Pre-emtive CRC errors (CRC_P)"
+msgstr ""
 
 msgid "None"
 msgstr "Cap"
@@ -1898,6 +2012,9 @@ msgstr "Cal especificar o el nom de host o l'adreça MAC!"
 
 msgid "One or more fields contain invalid values!"
 msgstr "Un o més dels camps requerits conté un valor invàlid!"
+
+msgid "One or more invalid/required values on tab"
+msgstr ""
 
 msgid "One or more required fields have no value!"
 msgstr "Un o més dels camps requerits no té valor!"
@@ -2000,6 +2117,9 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
+msgid "PTM/EFM (Packet Transfer Mode)"
+msgstr ""
+
 msgid "Package libiwinfo required!"
 msgstr "Es requereix el paquet libiwinfo!"
 
@@ -2024,6 +2144,9 @@ msgstr "Autenticació per contrasenya"
 msgid "Password of Private Key"
 msgstr "Contrasenya de la clau privada"
 
+msgid "Password of inner Private Key"
+msgstr ""
+
 msgid "Password successfully changed!"
 msgstr "La contrasenya s'ha canviat amb èxit!"
 
@@ -2037,6 +2160,15 @@ msgid "Path to Private Key"
 msgstr "Ruta a la clau privada"
 
 msgid "Path to executable which handles the button event"
+msgstr ""
+
+msgid "Path to inner CA-Certificate"
+msgstr ""
+
+msgid "Path to inner Client-Certificate"
+msgstr ""
+
+msgid "Path to inner Private Key"
 msgstr ""
 
 msgid "Peak:"
@@ -2084,6 +2216,12 @@ msgstr ""
 msgid "Port status:"
 msgstr "Estatus de port"
 
+msgid "Power Management Mode"
+msgstr ""
+
+msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -2100,6 +2238,9 @@ msgstr "continua"
 
 msgid "Processes"
 msgstr "Processos"
+
+msgid "Profile"
+msgstr ""
 
 msgid "Prot."
 msgstr "Prot."
@@ -2353,6 +2494,9 @@ msgstr ""
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
+msgid "SNR"
+msgstr ""
+
 msgid "SSH Access"
 msgstr "Accés SSH"
 
@@ -2436,6 +2580,12 @@ msgstr "Sincronització de hora"
 msgid "Setup DHCP Server"
 msgstr ""
 
+msgid "Severely Errored Seconds (SES)"
+msgstr ""
+
+msgid "Short GI"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr ""
 
@@ -2447,6 +2597,9 @@ msgstr "Atura aquesta xarxa"
 
 msgid "Signal"
 msgstr "Senyal"
+
+msgid "Signal Attenuation (SATN)"
+msgstr ""
 
 msgid "Signal:"
 msgstr "Senyal:"
@@ -2864,6 +3017,9 @@ msgid ""
 "archive here."
 msgstr ""
 
+msgid "Tone"
+msgstr ""
+
 msgid "Total Available"
 msgstr "Total disponible"
 
@@ -2937,6 +3093,9 @@ msgid "UUID"
 msgstr "UUID"
 
 msgid "Unable to dispatch"
+msgstr ""
+
+msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
 msgid "Unknown"
@@ -3021,7 +3180,8 @@ msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
 "em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
 "address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host."
+"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
 msgid "Used"
@@ -3041,6 +3201,9 @@ msgstr "Nom d'usuari"
 
 msgid "VC-Mux"
 msgstr "VC-Mux"
+
+msgid "VDSL"
+msgstr ""
 
 msgid "VLAN Interface"
 msgstr "Interfície VLAN"

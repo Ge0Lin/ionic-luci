@@ -118,13 +118,19 @@ msgstr "<abbr title=\"maximal\">Max.</abbr> interogari simultane"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid "A43C + J43 + A43"
+msgstr ""
+
+msgid "A43C + J43 + A43 + V43"
+msgstr ""
+
 msgid "ADSL"
 msgstr ""
 
-msgid "ADSL Status"
+msgid "AICCU (SIXXS)"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
+msgid "ANSI T1.413"
 msgstr ""
 
 msgid "APN"
@@ -135,6 +141,9 @@ msgstr "Suport AR"
 
 msgid "ARP retry threshold"
 msgstr "ARP prag reincercare"
+
+msgid "ATM (Asynchronous Transfer Mode)"
+msgstr ""
 
 msgid "ATM Bridges"
 msgstr "Punti ATM"
@@ -156,6 +165,9 @@ msgstr ""
 
 msgid "ATM device number"
 msgstr "ATM numar echipament"
+
+msgid "ATU-C System Vendor ID"
+msgstr ""
 
 msgid "AYIYA"
 msgstr ""
@@ -220,6 +232,9 @@ msgstr "Administrare"
 msgid "Advanced Settings"
 msgstr "Setari avansate"
 
+msgid "Aggregate Transmit Power(ACTATP)"
+msgstr ""
+
 msgid "Alert"
 msgstr "Alerta"
 
@@ -261,6 +276,51 @@ msgstr ""
 msgid "An additional network will be created if you leave this unchecked."
 msgstr ""
 "Daca lasati aceasta optiune neselectata va fi creata o retea aditionala"
+
+msgid "Annex"
+msgstr ""
+
+msgid "Annex A + L + M (all)"
+msgstr ""
+
+msgid "Annex A G.992.1"
+msgstr ""
+
+msgid "Annex A G.992.2"
+msgstr ""
+
+msgid "Annex A G.992.3"
+msgstr ""
+
+msgid "Annex A G.992.5"
+msgstr ""
+
+msgid "Annex B (all)"
+msgstr ""
+
+msgid "Annex B G.992.1"
+msgstr ""
+
+msgid "Annex B G.992.3"
+msgstr ""
+
+msgid "Annex B G.992.5"
+msgstr ""
+
+msgid "Annex J (all)"
+msgstr ""
+
+msgid "Annex L G.992.3 POTS 1"
+msgstr ""
+
+msgid "Annex M (all)"
+msgstr ""
+
+msgid "Annex M G.992.3"
+msgstr ""
+
+msgid "Annex M G.992.5"
+msgstr ""
 
 msgid "Announce as default router even if no public prefix is available."
 msgstr ""
@@ -359,6 +419,12 @@ msgstr "Pachete disponibile"
 
 msgid "Average:"
 msgstr "Medie:"
+
+msgid "B43 + B43C"
+msgstr ""
+
+msgid "B43 + B43C + V43"
+msgstr ""
 
 msgid "BR / DMR / AFTR"
 msgstr ""
@@ -650,7 +716,19 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
+msgid "DSL"
+msgstr ""
+
+msgid "DSL Status"
+msgstr ""
+
+msgid "DSL line mode"
+msgstr ""
+
 msgid "DUID"
+msgstr ""
+
+msgid "Data Rate"
 msgstr ""
 
 msgid "Debug"
@@ -660,6 +738,9 @@ msgid "Default %d"
 msgstr ""
 
 msgid "Default gateway"
+msgstr ""
+
+msgid "Default is stateless + stateful"
 msgstr ""
 
 msgid "Default route"
@@ -900,6 +981,9 @@ msgstr "Stergere..."
 msgid "Error"
 msgstr "Eroare"
 
+msgid "Errored seconds (ES)"
+msgstr ""
+
 msgid "Ethernet Adapter"
 msgstr "Adaptor de retea ethernet"
 
@@ -972,6 +1056,9 @@ msgstr "Setarile firewall-ului"
 msgid "Firewall Status"
 msgstr "Status la firewall"
 
+msgid "Firmware File"
+msgstr ""
+
 msgid "Firmware Version"
 msgstr "Versiunea de firmware"
 
@@ -1016,6 +1103,9 @@ msgid "Form token mismatch"
 msgstr ""
 
 msgid "Forward DHCP traffic"
+msgstr ""
+
+msgid "Forward Error Correction Seconds (FECS)"
 msgstr ""
 
 msgid "Forward broadcast traffic"
@@ -1099,6 +1189,9 @@ msgstr ""
 msgid "Hang Up"
 msgstr ""
 
+msgid "Header Error Code Errors (HEC)"
+msgstr ""
+
 msgid "Heartbeat"
 msgstr ""
 
@@ -1119,6 +1212,9 @@ msgstr ""
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "Ascunde <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+
+msgid "Host"
+msgstr ""
 
 msgid "Host entries"
 msgstr "Intrari de tip host"
@@ -1432,7 +1528,13 @@ msgstr "Limba"
 msgid "Language and Style"
 msgstr "Limba si stilul interfetei"
 
+msgid "Latency"
+msgstr ""
+
 msgid "Leaf"
+msgstr ""
+
+msgid "Lease time"
 msgstr ""
 
 msgid "Lease validity time"
@@ -1459,13 +1561,16 @@ msgstr "Legenda:"
 msgid "Limit"
 msgstr "Limita"
 
-msgid "Line Attenuation"
+msgid "Line Attenuation (LATN)"
 msgstr ""
 
-msgid "Line Speed"
+msgid "Line Mode"
 msgstr ""
 
 msgid "Line State"
+msgstr ""
+
+msgid "Line Uptime"
 msgstr ""
 
 msgid "Link On"
@@ -1537,7 +1642,7 @@ msgstr ""
 msgid "Localise queries"
 msgstr ""
 
-msgid "Locked to channel %d used by: %s"
+msgid "Locked to channel %s used by: %s"
 msgstr ""
 
 msgid "Log output level"
@@ -1554,6 +1659,9 @@ msgstr "Autentificare"
 
 msgid "Logout"
 msgstr "Iesire"
+
+msgid "Loss of Signal Seconds (LOSS)"
+msgstr ""
 
 msgid "Lowest leased address as offset from the network address."
 msgstr ""
@@ -1588,6 +1696,9 @@ msgid ""
 msgstr ""
 
 msgid "Manual"
+msgstr ""
+
+msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
 msgid "Maximum Rate"
@@ -1795,11 +1906,14 @@ msgstr ""
 msgid "Noise"
 msgstr "Zgomot"
 
-msgid "Noise Margin"
+msgid "Noise Margin (SNR)"
 msgstr ""
 
 msgid "Noise:"
 msgstr "Zgomot:"
+
+msgid "Non Pre-emtive CRC errors (CRC_P)"
+msgstr ""
 
 msgid "None"
 msgstr ""
@@ -1860,6 +1974,9 @@ msgstr ""
 
 msgid "One or more fields contain invalid values!"
 msgstr "Unul sau mai multe campuri contin valori invalide !"
+
+msgid "One or more invalid/required values on tab"
+msgstr ""
 
 msgid "One or more required fields have no value!"
 msgstr "Unul sau mai multe campuri nu contin valori !"
@@ -1962,6 +2079,9 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
+msgid "PTM/EFM (Packet Transfer Mode)"
+msgstr ""
+
 msgid "Package libiwinfo required!"
 msgstr "Pachetul libiwinfo este necesar !"
 
@@ -1986,6 +2106,9 @@ msgstr "Autentificarea cu parola"
 msgid "Password of Private Key"
 msgstr "Parola cheii private"
 
+msgid "Password of inner Private Key"
+msgstr ""
+
 msgid "Password successfully changed!"
 msgstr "Parola schimbata cu succes !"
 
@@ -2000,6 +2123,15 @@ msgstr "Calea catre cheia privata"
 
 msgid "Path to executable which handles the button event"
 msgstr "Calea catre executabilul care se ocupa de evenimentul butonului"
+
+msgid "Path to inner CA-Certificate"
+msgstr ""
+
+msgid "Path to inner Client-Certificate"
+msgstr ""
+
+msgid "Path to inner Private Key"
+msgstr ""
 
 msgid "Peak:"
 msgstr "Maxim:"
@@ -2046,6 +2178,12 @@ msgstr ""
 msgid "Port status:"
 msgstr "Stare port:"
 
+msgid "Power Management Mode"
+msgstr ""
+
+msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -2062,6 +2200,9 @@ msgstr "Continua"
 
 msgid "Processes"
 msgstr "Procese"
+
+msgid "Profile"
+msgstr ""
 
 msgid "Prot."
 msgstr ""
@@ -2313,6 +2454,9 @@ msgstr ""
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
+msgid "SNR"
+msgstr ""
+
 msgid "SSH Access"
 msgstr "Acces SSH"
 
@@ -2396,6 +2540,12 @@ msgstr "Configurare sincronizare timp"
 msgid "Setup DHCP Server"
 msgstr "Seteaza serverul DHCP"
 
+msgid "Severely Errored Seconds (SES)"
+msgstr ""
+
+msgid "Short GI"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr ""
 
@@ -2407,6 +2557,9 @@ msgstr "Opreste aceasta retea"
 
 msgid "Signal"
 msgstr "Semnal"
+
+msgid "Signal Attenuation (SATN)"
+msgstr ""
 
 msgid "Signal:"
 msgstr "Semnal:"
@@ -2796,6 +2949,9 @@ msgid ""
 "archive here."
 msgstr ""
 
+msgid "Tone"
+msgstr ""
+
 msgid "Total Available"
 msgstr "Total disponibil"
 
@@ -2869,6 +3025,9 @@ msgid "UUID"
 msgstr "UUID"
 
 msgid "Unable to dispatch"
+msgstr ""
+
+msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
 msgid "Unknown"
@@ -2953,7 +3112,8 @@ msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
 "em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
 "address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host."
+"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
 msgid "Used"
@@ -2973,6 +3133,9 @@ msgstr "Utilizator"
 
 msgid "VC-Mux"
 msgstr "VC-Mux"
+
+msgid "VDSL"
+msgstr ""
 
 msgid "VLAN Interface"
 msgstr "Interfata VLAN"

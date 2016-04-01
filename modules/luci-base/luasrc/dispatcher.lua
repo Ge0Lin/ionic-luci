@@ -197,6 +197,7 @@ function dispatch(request)
 	assert(conf.main,
 		"/etc/config/luci seems to be corrupt, unable to find section 'main'")
 
+	local i18n = require "luci.i18n"
 	local lang = conf.main.lang or "auto"
 	if lang == "auto" then
 		local aclang = http.getenv("HTTP_ACCEPT_LANGUAGE") or ""
@@ -208,7 +209,10 @@ function dispatch(request)
 			end
 		end
 	end
-	require "luci.i18n".setlanguage(lang)
+	if lang == "auto" then
+		lang = i18n.default
+	end
+	i18n.setlanguage(lang)
 
 	local c = ctx.tree
 	local stat
@@ -273,6 +277,13 @@ function dispatch(request)
 			if cond then
 				local env = getfenv(3)
 				local scope = (type(env.self) == "table") and env.self
+				if type(val) == "table" then
+					if not next(val) then
+						return ''
+					else
+						val = util.serialize_json(val)
+					end
+				end
 				return string.format(
 					' %s="%s"', tostring(key),
 					util.pcdata(tostring( val
@@ -317,7 +328,7 @@ function dispatch(request)
 		"Access Violation\nThe page at '" .. table.concat(request, "/") .. "/' " ..
 		"has no parent node so the access to this location has been denied.\n" ..
 		"This is a software bug, please report this message at " ..
-		"http://luci.subsignal.org/trac/newticket"
+		"https://github.com/openwrt/luci/issues"
 	)
 
 	if track.sysauth then

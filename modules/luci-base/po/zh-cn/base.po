@@ -118,13 +118,19 @@ msgstr "<abbr title=\"maximal\">最大</abbr>并发查询数"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid "A43C + J43 + A43"
+msgstr ""
+
+msgid "A43C + J43 + A43 + V43"
+msgstr ""
+
 msgid "ADSL"
 msgstr "ADSL"
 
-msgid "ADSL Status"
-msgstr "ADSL状态"
-
 msgid "AICCU (SIXXS)"
+msgstr ""
+
+msgid "ANSI T1.413"
 msgstr ""
 
 msgid "APN"
@@ -135,6 +141,9 @@ msgstr "AR支持"
 
 msgid "ARP retry threshold"
 msgstr "ARP重试阈值"
+
+msgid "ATM (Asynchronous Transfer Mode)"
+msgstr ""
 
 msgid "ATM Bridges"
 msgstr "ATM桥接"
@@ -155,6 +164,9 @@ msgstr ""
 
 msgid "ATM device number"
 msgstr "ATM设备号码"
+
+msgid "ATU-C System Vendor ID"
+msgstr ""
 
 msgid "AYIYA"
 msgstr ""
@@ -219,6 +231,9 @@ msgstr "管理权"
 msgid "Advanced Settings"
 msgstr "高级设置"
 
+msgid "Aggregate Transmit Power(ACTATP)"
+msgstr ""
+
 msgid "Alert"
 msgstr "警戒"
 
@@ -259,6 +274,51 @@ msgstr "总是广播默认路由"
 
 msgid "An additional network will be created if you leave this unchecked."
 msgstr "取消选中将会另外创建一个新网络，而不会覆盖当前网络设置"
+
+msgid "Annex"
+msgstr ""
+
+msgid "Annex A + L + M (all)"
+msgstr ""
+
+msgid "Annex A G.992.1"
+msgstr ""
+
+msgid "Annex A G.992.2"
+msgstr ""
+
+msgid "Annex A G.992.3"
+msgstr ""
+
+msgid "Annex A G.992.5"
+msgstr ""
+
+msgid "Annex B (all)"
+msgstr ""
+
+msgid "Annex B G.992.1"
+msgstr ""
+
+msgid "Annex B G.992.3"
+msgstr ""
+
+msgid "Annex B G.992.5"
+msgstr ""
+
+msgid "Annex J (all)"
+msgstr ""
+
+msgid "Annex L G.992.3 POTS 1"
+msgstr ""
+
+msgid "Annex M (all)"
+msgstr ""
+
+msgid "Annex M G.992.3"
+msgstr ""
+
+msgid "Annex M G.992.5"
+msgstr ""
 
 msgid "Announce as default router even if no public prefix is available."
 msgstr "即使没有可用的公共前缀也广播默认路由"
@@ -357,6 +417,12 @@ msgstr "可用软件包"
 
 msgid "Average:"
 msgstr "平均:"
+
+msgid "B43 + B43C"
+msgstr ""
+
+msgid "B43 + B43C + V43"
+msgstr ""
 
 msgid "BR / DMR / AFTR"
 msgstr ""
@@ -648,8 +714,20 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
+msgid "DSL"
+msgstr ""
+
+msgid "DSL Status"
+msgstr ""
+
+msgid "DSL line mode"
+msgstr ""
+
 msgid "DUID"
 msgstr "DUID（DHCP唯一标识符）"
+
+msgid "Data Rate"
+msgstr ""
 
 msgid "Debug"
 msgstr "调试"
@@ -659,6 +737,9 @@ msgstr "默认%d"
 
 msgid "Default gateway"
 msgstr "默认网关"
+
+msgid "Default is stateless + stateful"
+msgstr ""
 
 msgid "Default route"
 msgstr "默认路由"
@@ -901,6 +982,9 @@ msgstr "擦除中..."
 msgid "Error"
 msgstr "错误"
 
+msgid "Errored seconds (ES)"
+msgstr ""
+
 msgid "Ethernet Adapter"
 msgstr "以太网适配器"
 
@@ -976,6 +1060,9 @@ msgstr "防火墙设置"
 msgid "Firewall Status"
 msgstr "防火墙状态"
 
+msgid "Firmware File"
+msgstr ""
+
 msgid "Firmware Version"
 msgstr "固件版本"
 
@@ -1020,6 +1107,9 @@ msgstr ""
 
 msgid "Forward DHCP traffic"
 msgstr "转发DHCP数据包"
+
+msgid "Forward Error Correction Seconds (FECS)"
+msgstr ""
 
 msgid "Forward broadcast traffic"
 msgstr "转发广播数据包"
@@ -1102,6 +1192,9 @@ msgstr "处理程序"
 msgid "Hang Up"
 msgstr "挂起"
 
+msgid "Header Error Code Errors (HEC)"
+msgstr ""
+
 msgid "Heartbeat"
 msgstr "心跳"
 
@@ -1120,6 +1213,9 @@ msgstr "Hermes 802.11b 无线网卡"
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "隐藏<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+
+msgid "Host"
+msgstr ""
 
 msgid "Host entries"
 msgstr "主机目录"
@@ -1431,8 +1527,14 @@ msgstr "语言"
 msgid "Language and Style"
 msgstr "语言和界面"
 
+msgid "Latency"
+msgstr ""
+
 msgid "Leaf"
 msgstr "叶子"
+
+msgid "Lease time"
+msgstr ""
 
 msgid "Lease validity time"
 msgstr "有效租期"
@@ -1458,14 +1560,17 @@ msgstr "图例："
 msgid "Limit"
 msgstr "客户数"
 
-msgid "Line Attenuation"
+msgid "Line Attenuation (LATN)"
 msgstr ""
 
-msgid "Line Speed"
-msgstr "线路速率"
+msgid "Line Mode"
+msgstr ""
 
 msgid "Line State"
 msgstr "线路状态"
+
+msgid "Line Uptime"
+msgstr ""
 
 msgid "Link On"
 msgstr "活动链接"
@@ -1537,8 +1642,8 @@ msgstr "如果有多个IP可用，则根据请求来源的子网来本地化主�
 msgid "Localise queries"
 msgstr "本地化查询"
 
-msgid "Locked to channel %d used by: %s"
-msgstr "信道道已被锁定为 %d,因为该信道被 %s 使用"
+msgid "Locked to channel %s used by: %s"
+msgstr "信道道已被锁定为 %s,因为该信道被 %s 使用"
 
 msgid "Log output level"
 msgstr "日志记录等级"
@@ -1554,6 +1659,9 @@ msgstr "登录"
 
 msgid "Logout"
 msgstr "退出"
+
+msgid "Loss of Signal Seconds (LOSS)"
+msgstr ""
 
 msgid "Lowest leased address as offset from the network address."
 msgstr "网络地址的起始分配基址。"
@@ -1588,6 +1696,9 @@ msgid ""
 msgstr "请确认你已经复制过整个根文件系统,例如使用以下命令:"
 
 msgid "Manual"
+msgstr ""
+
+msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
 msgid "Maximum Rate"
@@ -1795,11 +1906,14 @@ msgstr "未指定区域"
 msgid "Noise"
 msgstr "噪声"
 
-msgid "Noise Margin"
-msgstr "噪声容限"
+msgid "Noise Margin (SNR)"
+msgstr ""
 
 msgid "Noise:"
 msgstr "噪声:"
+
+msgid "Non Pre-emtive CRC errors (CRC_P)"
+msgstr ""
 
 msgid "None"
 msgstr "无"
@@ -1860,6 +1974,9 @@ msgstr "请指定主机名或MAC地址！"
 
 msgid "One or more fields contain invalid values!"
 msgstr "一个或多个选项值有误！"
+
+msgid "One or more invalid/required values on tab"
+msgstr ""
 
 msgid "One or more required fields have no value!"
 msgstr "一个或多个必选项值为空！"
@@ -1962,6 +2079,9 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
+msgid "PTM/EFM (Packet Transfer Mode)"
+msgstr ""
+
 msgid "Package libiwinfo required!"
 msgstr "需要libiwinfo软件包！"
 
@@ -1986,6 +2106,9 @@ msgstr "密码验证"
 msgid "Password of Private Key"
 msgstr "私有密钥"
 
+msgid "Password of inner Private Key"
+msgstr ""
+
 msgid "Password successfully changed!"
 msgstr "密码修改成功！"
 
@@ -2000,6 +2123,15 @@ msgstr "私钥路径"
 
 msgid "Path to executable which handles the button event"
 msgstr "处理按键动作的可执行文件路径"
+
+msgid "Path to inner CA-Certificate"
+msgstr ""
+
+msgid "Path to inner Client-Certificate"
+msgstr ""
+
+msgid "Path to inner Private Key"
+msgstr ""
 
 msgid "Peak:"
 msgstr "峰值:"
@@ -2046,6 +2178,12 @@ msgstr "端口 %d 在多个VLAN中均未关联！"
 msgid "Port status:"
 msgstr "端口状态："
 
+msgid "Power Management Mode"
+msgstr ""
+
+msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -2062,6 +2200,9 @@ msgstr "执行"
 
 msgid "Processes"
 msgstr "系统进程"
+
+msgid "Profile"
+msgstr ""
 
 msgid "Prot."
 msgstr "协议"
@@ -2322,6 +2463,9 @@ msgstr ""
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
+msgid "SNR"
+msgstr ""
+
 msgid "SSH Access"
 msgstr "SSH访问"
 
@@ -2405,6 +2549,12 @@ msgstr "设置时间同步"
 msgid "Setup DHCP Server"
 msgstr "配置DHCP服务器"
 
+msgid "Severely Errored Seconds (SES)"
+msgstr ""
+
+msgid "Short GI"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr "显示当前文件备份列表"
 
@@ -2416,6 +2566,9 @@ msgstr "关闭此网络"
 
 msgid "Signal"
 msgstr "信号"
+
+msgid "Signal Attenuation (SATN)"
+msgstr ""
 
 msgid "Signal:"
 msgstr "信号:"
@@ -2829,6 +2982,9 @@ msgid ""
 "archive here."
 msgstr "上传备份存档以恢复配置。"
 
+msgid "Tone"
+msgstr ""
+
 msgid "Total Available"
 msgstr "可用数"
 
@@ -2903,6 +3059,9 @@ msgstr "UUID"
 
 msgid "Unable to dispatch"
 msgstr "无法调度"
+
+msgid "Unavailable Seconds (UAS)"
+msgstr ""
 
 msgid "Unknown"
 msgstr "未知"
@@ -2986,7 +3145,8 @@ msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
 "em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
 "address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host."
+"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "使用<em>添加</em>来增加新的租约条目。使用<em>MAC-地址</em>鉴别主机，<em>IPv4-"
 "地址</em>分配地址，<em>主机名</em>分配标识。"
@@ -3008,6 +3168,9 @@ msgstr "用户名"
 
 msgid "VC-Mux"
 msgstr "VC-Mux"
+
+msgid "VDSL"
+msgstr ""
 
 msgid "VLAN Interface"
 msgstr "VLAN接口"
@@ -3324,6 +3487,15 @@ msgstr "是"
 
 msgid "« Back"
 msgstr "« 后退"
+
+#~ msgid "ADSL Status"
+#~ msgstr "ADSL状态"
+
+#~ msgid "Line Speed"
+#~ msgstr "线路速率"
+
+#~ msgid "Noise Margin"
+#~ msgstr "噪声容限"
 
 #~ msgid "Delete this interface"
 #~ msgstr "删除此接口"

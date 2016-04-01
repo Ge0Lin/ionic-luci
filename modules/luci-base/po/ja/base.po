@@ -122,13 +122,19 @@ msgstr "<abbr title=\"maximal\">最大</abbr> 並列処理クエリ"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr ""
 
+msgid "A43C + J43 + A43"
+msgstr ""
+
+msgid "A43C + J43 + A43 + V43"
+msgstr ""
+
 msgid "ADSL"
 msgstr ""
 
-msgid "ADSL Status"
+msgid "AICCU (SIXXS)"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
+msgid "ANSI T1.413"
 msgstr ""
 
 msgid "APN"
@@ -139,6 +145,9 @@ msgstr "ARサポート"
 
 msgid "ARP retry threshold"
 msgstr "ARP再試行しきい値"
+
+msgid "ATM (Asynchronous Transfer Mode)"
+msgstr ""
 
 msgid "ATM Bridges"
 msgstr "ATMブリッジ"
@@ -157,6 +166,9 @@ msgstr ""
 
 msgid "ATM device number"
 msgstr "ATMデバイス番号"
+
+msgid "ATU-C System Vendor ID"
+msgstr ""
 
 msgid "AYIYA"
 msgstr ""
@@ -223,6 +235,9 @@ msgstr "管理画面"
 msgid "Advanced Settings"
 msgstr "詳細設定"
 
+msgid "Aggregate Transmit Power(ACTATP)"
+msgstr ""
+
 msgid "Alert"
 msgstr "警告"
 
@@ -262,6 +277,51 @@ msgstr ""
 
 msgid "An additional network will be created if you leave this unchecked."
 msgstr "チェックボックスがオフの場合、追加のネットワークが作成されます。"
+
+msgid "Annex"
+msgstr ""
+
+msgid "Annex A + L + M (all)"
+msgstr ""
+
+msgid "Annex A G.992.1"
+msgstr ""
+
+msgid "Annex A G.992.2"
+msgstr ""
+
+msgid "Annex A G.992.3"
+msgstr ""
+
+msgid "Annex A G.992.5"
+msgstr ""
+
+msgid "Annex B (all)"
+msgstr ""
+
+msgid "Annex B G.992.1"
+msgstr ""
+
+msgid "Annex B G.992.3"
+msgstr ""
+
+msgid "Annex B G.992.5"
+msgstr ""
+
+msgid "Annex J (all)"
+msgstr ""
+
+msgid "Annex L G.992.3 POTS 1"
+msgstr ""
+
+msgid "Annex M (all)"
+msgstr ""
+
+msgid "Annex M G.992.3"
+msgstr ""
+
+msgid "Annex M G.992.5"
+msgstr ""
 
 msgid "Announce as default router even if no public prefix is available."
 msgstr ""
@@ -360,6 +420,12 @@ msgstr "インストール可能なパッケージ"
 
 msgid "Average:"
 msgstr "平均値:"
+
+msgid "B43 + B43C"
+msgstr ""
+
+msgid "B43 + B43C + V43"
+msgstr ""
 
 msgid "BR / DMR / AFTR"
 msgstr ""
@@ -665,8 +731,20 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
+msgid "DSL"
+msgstr ""
+
+msgid "DSL Status"
+msgstr ""
+
+msgid "DSL line mode"
+msgstr ""
+
 msgid "DUID"
 msgstr "DUID"
+
+msgid "Data Rate"
+msgstr ""
 
 msgid "Debug"
 msgstr "デバッグ"
@@ -676,6 +754,9 @@ msgstr "標準設定 %d"
 
 msgid "Default gateway"
 msgstr "デフォルトゲートウェイ"
+
+msgid "Default is stateless + stateful"
+msgstr ""
 
 msgid "Default route"
 msgstr ""
@@ -930,6 +1011,9 @@ msgstr "消去中..."
 msgid "Error"
 msgstr "エラー"
 
+msgid "Errored seconds (ES)"
+msgstr ""
+
 msgid "Ethernet Adapter"
 msgstr "イーサネットアダプタ"
 
@@ -1005,6 +1089,9 @@ msgstr "ファイアウォール設定"
 msgid "Firewall Status"
 msgstr "ファイアウォール・ステータス"
 
+msgid "Firmware File"
+msgstr ""
+
 msgid "Firmware Version"
 msgstr "ファームウェア・バージョン"
 
@@ -1050,6 +1137,9 @@ msgstr ""
 
 msgid "Forward DHCP traffic"
 msgstr "DHCPトラフィックを転送する"
+
+msgid "Forward Error Correction Seconds (FECS)"
+msgstr ""
 
 msgid "Forward broadcast traffic"
 msgstr "ブロードキャスト・トラフィックを転送する"
@@ -1132,6 +1222,9 @@ msgstr "ハンドラ"
 msgid "Hang Up"
 msgstr "再起動"
 
+msgid "Header Error Code Errors (HEC)"
+msgstr ""
+
 msgid "Heartbeat"
 msgstr ""
 
@@ -1151,6 +1244,9 @@ msgstr "Hermes 802.11b 無線LANコントローラ"
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>の隠匿"
+
+msgid "Host"
+msgstr ""
 
 msgid "Host entries"
 msgstr "ホストエントリー"
@@ -1472,7 +1568,13 @@ msgstr "言語"
 msgid "Language and Style"
 msgstr "言語とスタイル"
 
+msgid "Latency"
+msgstr ""
+
 msgid "Leaf"
+msgstr ""
+
+msgid "Lease time"
 msgstr ""
 
 msgid "Lease validity time"
@@ -1499,13 +1601,16 @@ msgstr "凡例:"
 msgid "Limit"
 msgstr "割り当て数"
 
-msgid "Line Attenuation"
+msgid "Line Attenuation (LATN)"
 msgstr ""
 
-msgid "Line Speed"
+msgid "Line Mode"
 msgstr ""
 
 msgid "Line State"
+msgstr ""
+
+msgid "Line Uptime"
 msgstr ""
 
 msgid "Link On"
@@ -1581,7 +1686,7 @@ msgstr ""
 msgid "Localise queries"
 msgstr "ローカライズクエリ"
 
-msgid "Locked to channel %d used by: %s"
+msgid "Locked to channel %s used by: %s"
 msgstr ""
 
 msgid "Log output level"
@@ -1598,6 +1703,9 @@ msgstr "ログイン"
 
 msgid "Logout"
 msgstr "ログアウト"
+
+msgid "Loss of Signal Seconds (LOSS)"
+msgstr ""
 
 msgid "Lowest leased address as offset from the network address."
 msgstr ""
@@ -1633,6 +1741,9 @@ msgid ""
 msgstr ""
 
 msgid "Manual"
+msgstr ""
+
+msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
 msgid "Maximum Rate"
@@ -1842,11 +1953,14 @@ msgstr "ゾーンが設定されていません"
 msgid "Noise"
 msgstr "ノイズ"
 
-msgid "Noise Margin"
+msgid "Noise Margin (SNR)"
 msgstr ""
 
 msgid "Noise:"
 msgstr "ノイズ:"
+
+msgid "Non Pre-emtive CRC errors (CRC_P)"
+msgstr ""
 
 msgid "None"
 msgstr "なし"
@@ -1913,6 +2027,9 @@ msgstr "1つ以上のホスト名またはmacアドレスを設定してくだ�
 
 msgid "One or more fields contain invalid values!"
 msgstr "1つ以上のフィールドに無効な値が設定されています！"
+
+msgid "One or more invalid/required values on tab"
+msgstr ""
 
 msgid "One or more required fields have no value!"
 msgstr "1つ以上のフィールドに値が設定されていません！"
@@ -2017,6 +2134,9 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
+msgid "PTM/EFM (Packet Transfer Mode)"
+msgstr ""
+
 msgid "Package libiwinfo required!"
 msgstr "libiwinfo パッケージをインストールしてください！"
 
@@ -2041,6 +2161,9 @@ msgstr "パスワード認証"
 msgid "Password of Private Key"
 msgstr "秘密鍵のパスワード"
 
+msgid "Password of inner Private Key"
+msgstr ""
+
 msgid "Password successfully changed!"
 msgstr "パスワードを変更しました"
 
@@ -2055,6 +2178,15 @@ msgstr "秘密鍵のパス"
 
 msgid "Path to executable which handles the button event"
 msgstr "ボタンイベントをハンドルする実行ファイルのパス"
+
+msgid "Path to inner CA-Certificate"
+msgstr ""
+
+msgid "Path to inner Client-Certificate"
+msgstr ""
+
+msgid "Path to inner Private Key"
+msgstr ""
 
 msgid "Peak:"
 msgstr "ピーク:"
@@ -2101,6 +2233,12 @@ msgstr ""
 msgid "Port status:"
 msgstr "ポート ステータス:"
 
+msgid "Power Management Mode"
+msgstr ""
+
+msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -2119,6 +2257,9 @@ msgstr "続行"
 
 msgid "Processes"
 msgstr "プロセス"
+
+msgid "Profile"
+msgstr ""
 
 msgid "Prot."
 msgstr "プロトコル"
@@ -2387,6 +2528,9 @@ msgstr ""
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
+msgid "SNR"
+msgstr ""
+
 msgid "SSH Access"
 msgstr "SSHアクセス"
 
@@ -2472,6 +2616,12 @@ msgstr "時刻設定"
 msgid "Setup DHCP Server"
 msgstr "DHCPサーバーを設定"
 
+msgid "Severely Errored Seconds (SES)"
+msgstr ""
+
+msgid "Short GI"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr "現在のバックアップファイルのリストを表示する"
 
@@ -2483,6 +2633,9 @@ msgstr "ネットワークを終了"
 
 msgid "Signal"
 msgstr "信号強度"
+
+msgid "Signal Attenuation (SATN)"
+msgstr ""
 
 msgid "Signal:"
 msgstr "信号:"
@@ -2925,6 +3078,9 @@ msgstr ""
 "設定を復元するには、作成しておいたバックアップアーカイブをアップロードしてく"
 "ださい。"
 
+msgid "Tone"
+msgstr ""
+
 msgid "Total Available"
 msgstr "合計"
 
@@ -2998,6 +3154,9 @@ msgid "UUID"
 msgstr "UUID"
 
 msgid "Unable to dispatch"
+msgstr ""
+
+msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
 msgid "Unknown"
@@ -3086,7 +3245,8 @@ msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
 "em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
 "address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host."
+"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "<em>追加</em> ボタンを押して、新しくエントリーを作成してください。<em>MAC-ア"
 "ドレス</em> はそのホストを識別し, <em>IPv4-アドレス</em> には払いだす固定のア"
@@ -3110,6 +3270,9 @@ msgstr "ユーザー名"
 
 msgid "VC-Mux"
 msgstr "VC-Mux"
+
+msgid "VDSL"
+msgstr ""
 
 msgid "VLAN Interface"
 msgstr "VLANインターフェース"

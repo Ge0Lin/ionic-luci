@@ -185,14 +185,18 @@ local function _nethints(what, callback)
 		end
 	end
 
-	if fs.access("/var/dhcp.leases") then
-		for e in io.lines("/var/dhcp.leases") do
-			mac, ip, name = e:match("^%d+ (%S+) (%S+) (%S+)")
-			if mac and ip then
-				_add(what, mac:upper(), ip, nil, name ~= "*" and name)
+	cur:foreach("dhcp", "dnsmasq",
+		function(s)
+			if s.leasefile and fs.access(s.leasefile) then
+				for e in io.lines(s.leasefile) do
+					mac, ip, name = e:match("^%d+ (%S+) (%S+) (%S+)")
+					if mac and ip then
+						_add(what, mac:upper(), ip, nil, name ~= "*" and name)
+					end
+				end
 			end
 		end
-	end
+	)
 
 	cur:foreach("dhcp", "host",
 		function(s)
@@ -321,12 +325,10 @@ function net.conntrack(callback)
 
 	local line, connt = nil, (not callback) and { }
 	for line in nfct do
-		local fam, l3, l4, timeout, state, tuples =
-			line:match("^(ipv[46]) +(%d+) +%S+ +(%d+) +(%d+) +([A-Z_]+) +(.+)$")
+		local fam, l3, l4, timeout, tuples =
+			line:match("^(ipv[46]) +(%d+) +%S+ +(%d+) +(%d+) +(.+)$")
 
-		if fam and l3 and l4 and timeout and state and tuples and
-		   state ~= "TIME_WAIT"
-		then
+		if fam and l3 and l4 and timeout and not tuples:match("^TIME_WAIT ") then
 			l4 = nixio.getprotobynumber(l4)
 
 			local entry = {
@@ -341,7 +343,11 @@ function net.conntrack(callback)
 			for key, val in tuples:gmatch("(%w+)=(%S+)") do
 				if key == "bytes" or key == "packets" then
 					entry[key] = entry[key] + tonumber(val, 10)
-				elseif key == "src" or key == "dst" or key == "sport" or key == "dport" then
+				elseif key == "src" or key == "dst" then
+					if entry[key] == nil then
+						entry[key] = luci.ip.new(val):string()
+					end
+				elseif key == "sport" or key == "dport" then
 					if entry[key] == nil then
 						entry[key] = val
 					end

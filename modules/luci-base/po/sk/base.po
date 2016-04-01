@@ -109,13 +109,19 @@ msgstr ""
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr ""
 
+msgid "A43C + J43 + A43"
+msgstr ""
+
+msgid "A43C + J43 + A43 + V43"
+msgstr ""
+
 msgid "ADSL"
 msgstr ""
 
-msgid "ADSL Status"
+msgid "AICCU (SIXXS)"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
+msgid "ANSI T1.413"
 msgstr ""
 
 msgid "APN"
@@ -125,6 +131,9 @@ msgid "AR Support"
 msgstr ""
 
 msgid "ARP retry threshold"
+msgstr ""
+
+msgid "ATM (Asynchronous Transfer Mode)"
 msgstr ""
 
 msgid "ATM Bridges"
@@ -143,6 +152,9 @@ msgid ""
 msgstr ""
 
 msgid "ATM device number"
+msgstr ""
+
+msgid "ATU-C System Vendor ID"
 msgstr ""
 
 msgid "AYIYA"
@@ -208,6 +220,9 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr ""
 
+msgid "Aggregate Transmit Power(ACTATP)"
+msgstr ""
+
 msgid "Alert"
 msgstr ""
 
@@ -245,6 +260,51 @@ msgid "Always announce default router"
 msgstr ""
 
 msgid "An additional network will be created if you leave this unchecked."
+msgstr ""
+
+msgid "Annex"
+msgstr ""
+
+msgid "Annex A + L + M (all)"
+msgstr ""
+
+msgid "Annex A G.992.1"
+msgstr ""
+
+msgid "Annex A G.992.2"
+msgstr ""
+
+msgid "Annex A G.992.3"
+msgstr ""
+
+msgid "Annex A G.992.5"
+msgstr ""
+
+msgid "Annex B (all)"
+msgstr ""
+
+msgid "Annex B G.992.1"
+msgstr ""
+
+msgid "Annex B G.992.3"
+msgstr ""
+
+msgid "Annex B G.992.5"
+msgstr ""
+
+msgid "Annex J (all)"
+msgstr ""
+
+msgid "Annex L G.992.3 POTS 1"
+msgstr ""
+
+msgid "Annex M (all)"
+msgstr ""
+
+msgid "Annex M G.992.3"
+msgstr ""
+
+msgid "Annex M G.992.5"
 msgstr ""
 
 msgid "Announce as default router even if no public prefix is available."
@@ -343,6 +403,12 @@ msgid "Available packages"
 msgstr ""
 
 msgid "Average:"
+msgstr ""
+
+msgid "B43 + B43C"
+msgstr ""
+
+msgid "B43 + B43C + V43"
 msgstr ""
 
 msgid "BR / DMR / AFTR"
@@ -632,7 +698,19 @@ msgstr ""
 msgid "DS-Lite AFTR address"
 msgstr ""
 
+msgid "DSL"
+msgstr ""
+
+msgid "DSL Status"
+msgstr ""
+
+msgid "DSL line mode"
+msgstr ""
+
 msgid "DUID"
+msgstr ""
+
+msgid "Data Rate"
 msgstr ""
 
 msgid "Debug"
@@ -642,6 +720,9 @@ msgid "Default %d"
 msgstr ""
 
 msgid "Default gateway"
+msgstr ""
+
+msgid "Default is stateless + stateful"
 msgstr ""
 
 msgid "Default route"
@@ -880,6 +961,9 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
+msgid "Errored seconds (ES)"
+msgstr ""
+
 msgid "Ethernet Adapter"
 msgstr ""
 
@@ -952,6 +1036,9 @@ msgstr ""
 msgid "Firewall Status"
 msgstr ""
 
+msgid "Firmware File"
+msgstr ""
+
 msgid "Firmware Version"
 msgstr ""
 
@@ -995,6 +1082,9 @@ msgid "Form token mismatch"
 msgstr ""
 
 msgid "Forward DHCP traffic"
+msgstr ""
+
+msgid "Forward Error Correction Seconds (FECS)"
 msgstr ""
 
 msgid "Forward broadcast traffic"
@@ -1078,6 +1168,9 @@ msgstr ""
 msgid "Hang Up"
 msgstr ""
 
+msgid "Header Error Code Errors (HEC)"
+msgstr ""
+
 msgid "Heartbeat"
 msgstr ""
 
@@ -1095,6 +1188,9 @@ msgid "Hermes 802.11b Wireless Controller"
 msgstr ""
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+msgstr ""
+
+msgid "Host"
 msgstr ""
 
 msgid "Host entries"
@@ -1406,7 +1502,13 @@ msgstr ""
 msgid "Language and Style"
 msgstr ""
 
+msgid "Latency"
+msgstr ""
+
 msgid "Leaf"
+msgstr ""
+
+msgid "Lease time"
 msgstr ""
 
 msgid "Lease validity time"
@@ -1433,13 +1535,16 @@ msgstr ""
 msgid "Limit"
 msgstr ""
 
-msgid "Line Attenuation"
+msgid "Line Attenuation (LATN)"
 msgstr ""
 
-msgid "Line Speed"
+msgid "Line Mode"
 msgstr ""
 
 msgid "Line State"
+msgstr ""
+
+msgid "Line Uptime"
 msgstr ""
 
 msgid "Link On"
@@ -1511,7 +1616,7 @@ msgstr ""
 msgid "Localise queries"
 msgstr ""
 
-msgid "Locked to channel %d used by: %s"
+msgid "Locked to channel %s used by: %s"
 msgstr ""
 
 msgid "Log output level"
@@ -1527,6 +1632,9 @@ msgid "Login"
 msgstr ""
 
 msgid "Logout"
+msgstr ""
+
+msgid "Loss of Signal Seconds (LOSS)"
 msgstr ""
 
 msgid "Lowest leased address as offset from the network address."
@@ -1562,6 +1670,9 @@ msgid ""
 msgstr ""
 
 msgid "Manual"
+msgstr ""
+
+msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
 msgid "Maximum Rate"
@@ -1769,10 +1880,13 @@ msgstr ""
 msgid "Noise"
 msgstr ""
 
-msgid "Noise Margin"
+msgid "Noise Margin (SNR)"
 msgstr ""
 
 msgid "Noise:"
+msgstr ""
+
+msgid "Non Pre-emtive CRC errors (CRC_P)"
 msgstr ""
 
 msgid "None"
@@ -1833,6 +1947,9 @@ msgid "One of hostname or mac address must be specified!"
 msgstr ""
 
 msgid "One or more fields contain invalid values!"
+msgstr ""
+
+msgid "One or more invalid/required values on tab"
 msgstr ""
 
 msgid "One or more required fields have no value!"
@@ -1936,6 +2053,9 @@ msgstr ""
 msgid "PSID-bits length"
 msgstr ""
 
+msgid "PTM/EFM (Packet Transfer Mode)"
+msgstr ""
+
 msgid "Package libiwinfo required!"
 msgstr ""
 
@@ -1960,6 +2080,9 @@ msgstr ""
 msgid "Password of Private Key"
 msgstr ""
 
+msgid "Password of inner Private Key"
+msgstr ""
+
 msgid "Password successfully changed!"
 msgstr ""
 
@@ -1973,6 +2096,15 @@ msgid "Path to Private Key"
 msgstr ""
 
 msgid "Path to executable which handles the button event"
+msgstr ""
+
+msgid "Path to inner CA-Certificate"
+msgstr ""
+
+msgid "Path to inner Client-Certificate"
+msgstr ""
+
+msgid "Path to inner Private Key"
 msgstr ""
 
 msgid "Peak:"
@@ -2020,6 +2152,12 @@ msgstr ""
 msgid "Port status:"
 msgstr ""
 
+msgid "Power Management Mode"
+msgstr ""
+
+msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -2035,6 +2173,9 @@ msgid "Proceed"
 msgstr ""
 
 msgid "Processes"
+msgstr ""
+
+msgid "Profile"
 msgstr ""
 
 msgid "Prot."
@@ -2285,6 +2426,9 @@ msgstr ""
 msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
+msgid "SNR"
+msgstr ""
+
 msgid "SSH Access"
 msgstr ""
 
@@ -2367,6 +2511,12 @@ msgstr ""
 msgid "Setup DHCP Server"
 msgstr ""
 
+msgid "Severely Errored Seconds (SES)"
+msgstr ""
+
+msgid "Short GI"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr ""
 
@@ -2377,6 +2527,9 @@ msgid "Shutdown this network"
 msgstr ""
 
 msgid "Signal"
+msgstr ""
+
+msgid "Signal Attenuation (SATN)"
 msgstr ""
 
 msgid "Signal:"
@@ -2765,6 +2918,9 @@ msgid ""
 "archive here."
 msgstr ""
 
+msgid "Tone"
+msgstr ""
+
 msgid "Total Available"
 msgstr ""
 
@@ -2838,6 +2994,9 @@ msgid "UUID"
 msgstr ""
 
 msgid "Unable to dispatch"
+msgstr ""
+
+msgid "Unavailable Seconds (UAS)"
 msgstr ""
 
 msgid "Unknown"
@@ -2922,7 +3081,8 @@ msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
 "em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
 "address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host."
+"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
 msgid "Used"
@@ -2941,6 +3101,9 @@ msgid "Username"
 msgstr ""
 
 msgid "VC-Mux"
+msgstr ""
+
+msgid "VDSL"
 msgstr ""
 
 msgid "VLAN Interface"
