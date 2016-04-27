@@ -2,8 +2,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.2-1\n"
 "POT-Creation-Date: 2016-02-29 20:55+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2016-02-29 20:58+0100\n"
 "Last-Translator: Christian Schoenebeck <christian.schoenebeck@gmail.com>\n"
+=======
+"PO-Revision-Date: 2016-03-29 19:35+0200\n"
+"Last-Translator: Christian Schönebeck <christian.schoenebeck@gmail.com>\n"
+>>>>>>> openwrt
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -364,7 +369,11 @@ msgstr ""
 "compiliert."
 
 msgid "Info"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Info"
+>>>>>>> openwrt
 
 msgid ""
 "Install ca-certificates package or needed certificates by hand into /etc/ssl/"
@@ -641,8 +650,15 @@ msgstr ""
 msgid "Using specific DNS Server not supported"
 msgstr "Verwendung spezifischer DNS-Server wird nicht unterstützt"
 
+msgid "Using specific DNS Server not supported"
+msgstr "Verwendung spezifischer DNS-Server wird nicht unterstützt"
+
 msgid "Verify"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Überprüfen"
+>>>>>>> openwrt
 
 msgid "Version"
 msgstr ""
